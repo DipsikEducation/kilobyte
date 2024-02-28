@@ -1,12 +1,16 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
+/* MAIN SATTING
+
+FONTS: DM Sans 400,500,700 + italic
+
+COLOR : #111111 Black , Title and Headers
+ #202024 Grey , description main text color
+ #4F2EE8 Violet , HOVER - white variable
+ #EAC645 Yellow , Hover - Dark variable
+ #FFFFFF White ,
+
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+
+@import url(./reset.css);
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +26,68 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+section {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  section {
+    padding-bottom: 100px;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 24px;
+  }
+
+  section {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
 }
