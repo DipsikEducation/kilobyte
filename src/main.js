@@ -7,4 +7,4 @@
 (docs) - https://www.npmjs.com/package/tui-pagination
 4.Swiper 
 (docs) - https://www.npmjs.com/package/swiper
-*/ 
+*/
