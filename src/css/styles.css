@@ -12,6 +12,7 @@ COLOR : #111111 Black , Title and Headers
 
 @import url(./reset.css);
 @import url(./header.css);
+@import url(./categories.css);
 @import url(./support.css);
 
 :root {
