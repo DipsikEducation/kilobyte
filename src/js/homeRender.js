@@ -4,7 +4,7 @@ import iziToast from "izitoast";
 import 'izitoast/dist/css/iziToast.min.css';
 export {seeMoreBtn, categoriesList};
 const categoriesList = document.querySelector(".home-categories-list");
-
+let seeMoreBtn;
 const toastOptions = {
     titleColor: '#fff',
     titleSize: '16px',
