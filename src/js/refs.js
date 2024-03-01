@@ -3,3 +3,4 @@ export const refs = {
 };
 
 refs.themeCheckbox.addEventListener('change', onAddThemeLocalStorage);
+const categoriesRef = document.querySelector('.categories__list');
