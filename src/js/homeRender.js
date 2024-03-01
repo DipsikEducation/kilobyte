@@ -5,6 +5,16 @@ import 'izitoast/dist/css/iziToast.min.css';
 export {seeMoreBtn, categoriesList};
 const categoriesList = document.querySelector(".home-categories-list");
 let seeMoreBtn;
+
+//  loader
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+    loader.style.display = 'none';
+});
+
+//  loader
+
 const toastOptions = {
     titleColor: '#fff',
     titleSize: '16px',
