@@ -1,0 +1,52 @@
+.home-wrapper {
+}
+.main-category-title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1875;
+    letter-spacing: -0.04em;
+    color: #111;
+    margin-bottom: 40px;
+}
+.main-category-title-span {
+    color: #4f2ee8;
+}
+.categories-wrapper {
+}
+.home-categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.home-categories-item {
+}
+.home-category-title {
+}
+.home-books-list {
+}
+.see-more {
+}
+.home-books-item {
+}
+.home-book-wrapper {
+}
+.book-image {
+}
+.image-overlay {
+}
+.image-overlay-text {
+}
+.book-info {
+}
+.book-info-title {
+}
+.book-info-author {
+}
+
+@media screen and (max-width: 767px){
+    .home-books-list .home-books-item:nth-of-type(n + 2){
+        display: none;
+    } 
+}
