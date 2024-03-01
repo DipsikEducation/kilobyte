@@ -2,7 +2,7 @@ import{S as m,a as p,i as n}from"./assets/vendor-b7a1aa6d.js";(function(){const 
    <a href="${e.url}" target="_blank">
    <img src="${e.img}" class="support-img"/>
    </a>
-   </div>`}function I(e){return e.map(w).join("")}function f(){const e=I(u);B.innerHTML=e}f();const v=new m(".mySwiper",{direction:"vertical",spaceBetween:20,loop:!0,slidesPerView:6,plugins:{scrollContainer:!0},rewind:!0}),c="https://books-backend.p.goit.global/books/";async function y(){return await p.get(`${c}top-books`)}async function h(e){return await p.get(`${c}category?category=${e}`)}const d=document.querySelector(".home-categories-list"),l=document.querySelector(".main-category-title");function C(e){const o=e;console.log(e),h(o).then(r=>{Object.keys(r.data).length!==0?(s.innerHTML="",Y(r.data,o)):(d.innerHTML="",n.error({message:"Sorry, there are no books to render",position:"topRight"}))}).catch(r=>{console.log("Error loading data:",r),n.info({message:"Sorry, there are no books to render",position:"topRight",timeout:3e3,progressBar:!1,title:"Error"})})}function Y(e,o){const r=e.map(t=>`
+   </div>`}function I(e){return e.map(w).join("")}function y(){const e=I(u);B.innerHTML=e}y();const v=new m(".mySwiper",{direction:"vertical",spaceBetween:20,loop:!0,slidesPerView:6,plugins:{scrollContainer:!0},rewind:!0}),c="https://books-backend.p.goit.global/books/";async function f(){return await p.get(`${c}top-books`)}async function h(e){return await p.get(`${c}category?category=${e}`)}const d=document.querySelector(".home-categories-list"),l=document.querySelector(".main-category-title");function C(e){const o=e;console.log(e),h(o).then(r=>{Object.keys(r.data).length!==0?(s.innerHTML="",Y(r.data,o)):(d.innerHTML="",n.error({message:"Sorry, there are no books to render",position:"topRight"}))}).catch(r=>{console.log("Error loading data:",r),n.info({message:"Sorry, there are no books to render",position:"topRight",timeout:3e3,progressBar:!1,title:"Error"})})}function Y(e,o){const r=e.map(t=>`
         <li class="home-books-item" id="${t._id}">
             <div class="home-book-wrapper">
                 <img class="book-image" src="${t.book_image}" alt="${t.title}">
@@ -12,12 +12,12 @@ import{S as m,a as p,i as n}from"./assets/vendor-b7a1aa6d.js";(function(){const 
                 <p class="book-info-title">${t.title}</p>
                 <p class="book-info-author">${t.author}</p>
             </div>
-        </li>`).join("");d.insertAdjacentHTML("beforeend",r);const A=o.split(" ");if(A.length>3){const t=A[Math.round((A.length-1)/2)];let i=o.split(t).join(" ");i=i.replace(A[A.length-1],`<span class="main-category-title-span">${A[A.length-1]}</span>`),l.innerHTML=i}else o=o.replace(A[A.length-1],`<span class="main-category-title-span">${A[A.length-1]}</span>`),l.innerHTML=o}const s=document.querySelector(".home-categories-list");let g;const E={titleColor:"#fff",titleSize:"16px",titleLineHeight:"1.5",messageColor:"#fff",messageSize:"16px",messageLineHeight:"1.5",position:"topRight",timeout:3e3,progressBar:!1},L={...E,backgroundColor:"#EF4040",maxWidth:400};function T(){window.addEventListener("load",()=>{y().then(e=>{Object.keys(e.data).length!==0?(s.innerHTML="",U(e.data)):(s.innerHTML="",n.error({message:"Sorry, there are no books to render",position:"topRight"}))}).catch(e=>{console.log("Error loading data:",e),n.info({message:"Sorry, there are no books to render",position:"topRight",timeout:3e3,progressBar:!1,title:"Error",...L})})})}function U(e){const o=e.map(r=>`
+        </li>`).join("");d.insertAdjacentHTML("beforeend",r);const A=o.split(" ");if(A.length>3){const t=A[Math.round((A.length-1)/2)];let i=o.split(t).join(" ");i=i.replace(A[A.length-1],`<span class="main-category-title-span">${A[A.length-1]}</span>`),l.innerHTML=i}else o=o.replace(A[A.length-1],`<span class="main-category-title-span">${A[A.length-1]}</span>`),l.innerHTML=o}const s=document.querySelector(".home-categories-list");let g;const E=document.querySelector(".loader");window.addEventListener("load",()=>{E.style.display="none"});const L={titleColor:"#fff",titleSize:"16px",titleLineHeight:"1.5",messageColor:"#fff",messageSize:"16px",messageLineHeight:"1.5",position:"topRight",timeout:3e3,progressBar:!1},T={...L,backgroundColor:"#EF4040",maxWidth:400};function U(){window.addEventListener("load",()=>{f().then(e=>{Object.keys(e.data).length!==0?(s.innerHTML="",X(e.data)):(s.innerHTML="",n.error({message:"Sorry, there are no books to render",position:"topRight"}))}).catch(e=>{console.log("Error loading data:",e),n.info({message:"Sorry, there are no books to render",position:"topRight",timeout:3e3,progressBar:!1,title:"Error",...T})})})}function X(e){const o=e.map(r=>`
         <li class="home-categories-item">
         <h3 class="home-category-title">${r.list_name}</h3>
-        <ul class="home-books-list">${X(r.books)}</ul>
+        <ul class="home-books-list">${j(r.books)}</ul>
         <button class="button see-more" data-js="${r.list_name}">See more</button>
-        </li>`).join("");s.insertAdjacentHTML("beforeend",o),g=document.querySelectorAll(".see-more"),j()}function X(e){return e.map(o=>`
+        </li>`).join("");s.insertAdjacentHTML("beforeend",o),g=document.querySelectorAll(".see-more"),V()}function j(e){return e.map(o=>`
         <li class="home-books-item" id="${o._id}">
             <div class="home-book-wrapper">
                 <img class="book-image" src="${o.book_image}" alt="${o.title}">
@@ -27,5 +27,5 @@ import{S as m,a as p,i as n}from"./assets/vendor-b7a1aa6d.js";(function(){const 
                 <p class="book-info-title">${o.title}</p>
                 <p class="book-info-author">${o.author}</p>
             </div>
-        </li>`).join("")}function j(){for(let e of g)e.addEventListener("click",()=>C(e.getAttribute("data-js")))}localStorage.getItem("theme")==="dark"&&(refs.themeCheckbox.checked=!0);T();
+        </li>`).join("")}function V(){for(let e of g)e.addEventListener("click",()=>C(e.getAttribute("data-js")))}localStorage.getItem("theme")==="dark"&&(refs.themeCheckbox.checked=!0);U();
 //# sourceMappingURL=commonHelpers.js.map
