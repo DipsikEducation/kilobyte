@@ -1,25 +1,39 @@
 <header id="header" class="header">
-        <div class="container header-container">
-            <div class="header-navigation">       
-                <a href="./index.html" class="header-link">
-                    <svg class="header-logo" id="icon-logotip" width="24" height="24">
-                        <use href="./img/noptimizesprite.svg#icon-logo1"></use>
-                    </svg>
-                    <svg class="header-logo-two" id="icon-Bookshelf" width="77" height="14">
-                        <use href="./img/noptimizesprite.svg#icon-Bookshelf"></use>
-                    </svg>
-                </a> 
+    <div class="container header-container">
+        <div class="header-logo">
+            <a href="./index.html" class="header-link">
+                <svg class="header-logo-icon" id="icon-logotip" width="24" height="24">
+                    <use href="./img/noptimizesprite.svg#icon-logotip"></use>
+                </svg>
+            </a>
+        </div>
+        <nav class="header-nav">
+            <a class="header-nav-home" href="./index.html">HOME</a>
+            <a class="header-nav-shop" href="./partials/shopinglist.html">SHOPPING LIST
+                <svg class="header-nav-icon" id="icon-uil_cart" width="20" height="20">
+                    <use href="./img/noptimizesprite.svg#icon-uil_cart"></use>
+                </svg>
+            </a>
+        </nav>
+        <div class="header-block">
+            <div class="header-switcher">
+                <input type="checkbox" id="theme-switch" class="header-switch" />
+                <label for="theme-switch" class="header-switch-label"></label>
             </div>
-            <div class="header-block">
-                <div class="header-switcher">
-                    <input type="checkbox" id="theme-switch" class="header-switch" width="40" height="20" />
-                    <label for="theme-switch" class="header-switch-label"></label>
-                </div>
-                <a href="" class="header-link">
+            <div class="header-burger">
+                <a href="./partials/modalburger.html" class="header-link-burger">
                     <svg class="btn-burger-icon" id="icon-align-left" width="28" height="28">
                         <use href="./img/noptimizesprite.svg#icon-align-left"></use>
                     </svg>
                 </a>
             </div>
+            <div class="header-btn">
+            <button class="header-btn-up">Sing up
+                <svg class="header-btn-icon" id="icon-arrow-narrow-right" width="20" height="20">
+                    <use href="./img/noptimizesprite.svg#icon-arrow-narrow-right"></use>
+                </svg>
+            </button>
         </div>
-    </header>
+        </div>
+    </div>
+</header>
