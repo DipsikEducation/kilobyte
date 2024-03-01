@@ -56,7 +56,7 @@
 }
 
 .header-switch:checked+.header-switch-label {
-    background: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
+    background: linear-gradient(180deg, #4f2ee8 0%, #686868 100%);
 }
 
 .header-switch-label::before {
