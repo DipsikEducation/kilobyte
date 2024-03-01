@@ -16,6 +16,7 @@ COLOR : #111111 Black , Title and Headers
 @import url(./home.css);
 @import url(./support.css);
 @import url(./shoppingList.css);
+@import url(./loader.css);
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;

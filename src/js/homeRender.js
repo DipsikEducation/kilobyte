@@ -3,6 +3,14 @@ import iziToast from "izitoast";
 import 'izitoast/dist/css/iziToast.min.css';
 const categoriesList = document.querySelector(".home-categories-list");
 
+// лоудер
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+    loader.style.display = 'none';
+});
+// лоудер
+
 const toastOptions = {
     titleColor: '#fff',
     titleSize: '16px',
