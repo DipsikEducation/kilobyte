@@ -16,3 +16,6 @@ if (localStorage.getItem('theme') === 'dark') {
 
 import { loadHomeBooks } from './js/homeRender';
 loadHomeBooks();
+
+import { onCategoriesClick } from './js/categories';
+onCategoriesClick();
