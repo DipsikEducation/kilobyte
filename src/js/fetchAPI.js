@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://example.com/invalid_url';
+const BASE_URL = 'https://books-backend.p.goit.global/books/';
 
 export async function fetchTopBooks() {
   return await axios.get(`${BASE_URL}top-books`);
