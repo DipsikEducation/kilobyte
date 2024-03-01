@@ -2,7 +2,7 @@ const categoriesRef = document.querySelector('.categories__list');
 
 categoriesRef.addEventListener('click', onCategoriesClick);
 
-async function onCategoriesClick(e) {
+export async function onCategoriesClick(e) {
   e.preventDefault();
 }
 
