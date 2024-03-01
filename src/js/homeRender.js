@@ -1,8 +1,10 @@
-import {fetchTopBooks, fetchSelectedCategory, fetchBookDetails} from "./fetchAPI";
+import {fetchTopBooks} from "./fetchAPI";
+import { LoadHomeCategory } from "./homeCatRender";
 import iziToast from "izitoast";
 import 'izitoast/dist/css/iziToast.min.css';
+export {seeMoreBtn, categoriesList};
 const categoriesList = document.querySelector(".home-categories-list");
-
+let seeMoreBtn;
 const toastOptions = {
     titleColor: '#fff',
     titleSize: '16px',
@@ -28,11 +30,10 @@ const optionsIziToastError = {
     
 };
 
-let booksList;
 export function loadHomeBooks() {window.addEventListener("load", () =>{
     fetchTopBooks()
     .then((categories) =>{
-        if(Object.keys(categories.data).lenght !== 0 ){
+        if(Object.keys(categories.data).length !== 0 ){
             categoriesList.innerHTML = "";
             renderHomeCategories(categories.data);
 
@@ -58,7 +59,6 @@ export function loadHomeBooks() {window.addEventListener("load", () =>{
     })
 });}
 function renderHomeCategories(categories){
-    console.log(categories);
     const markupCategories = categories
     .map((category) =>{
         return `
@@ -70,10 +70,10 @@ function renderHomeCategories(categories){
     })
     .join("");
     categoriesList.insertAdjacentHTML("beforeend", markupCategories);
-
+    seeMoreBtn = document.querySelectorAll(".see-more");
+    seeMoreListener();
 }
 function renderHomeBooks(books){
-    console.log(books)
     return books.map((book) => {
         return `
         <li class="home-books-item" id="${book._id}">
@@ -89,7 +89,11 @@ function renderHomeBooks(books){
     })
     .join("");
 }
-
+function seeMoreListener(){
+for (let btns of seeMoreBtn){
+    btns.addEventListener("click",() => LoadHomeCategory(btns.getAttribute("data-js")));
+}
+}
 
 
 
