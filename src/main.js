@@ -10,8 +10,8 @@ import './js/support';
 (docs) - https://www.npmjs.com/package/swiper
 */
 if (localStorage.getItem('theme') === 'dark') {
-    refs.themeCheckbox.checked = true;
-    // Сюди треба навішати класи для темної теми або функцію яка це робитиме
+  refs.themeCheckbox.checked = true;
+  // Сюди треба навішати класи для темної теми або функцію яка це робитиме
 }
 
 import { loadHomeBooks } from './js/homeRender';
