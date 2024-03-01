@@ -1,7 +1,33 @@
 import {fetchTopBooks, fetchSelectedCategory, fetchBookDetails} from "./fetchAPI";
 import iziToast from "izitoast";
-export
+import 'izitoast/dist/css/iziToast.min.css';
 const categoriesList = document.querySelector(".home-categories-list");
+
+const toastOptions = {
+    titleColor: '#fff',
+    titleSize: '16px',
+    titleLineHeight: '1.5',
+    messageColor: '#fff',
+    messageSize: '16px',
+    messageLineHeight: '1.5',
+    position: 'topRight',
+    timeout: 3000,
+    progressBar: false
+};
+
+const optionsIziToastWarning = {
+    ...toastOptions,
+    message: 'none',
+    backgroundColor: '#FFA000'
+};
+
+const optionsIziToastError = {
+    ...toastOptions,
+    backgroundColor: '#EF4040',
+    maxWidth: 400
+    
+};
+
 let booksList;
 export function loadHomeBooks() {window.addEventListener("load", () =>{
     fetchTopBooks()
@@ -21,11 +47,13 @@ export function loadHomeBooks() {window.addEventListener("load", () =>{
     })
     .catch((error) =>{
         console.log('Error loading data:', error)
-        iziToast.error({
+        iziToast.info({
             message: "Sorry, there are no books to render",
             position: `topRight`,
             timeout: 3000,
-            progressBar: false
+            progressBar: false,
+            title: 'Error',
+            ...optionsIziToastError
         });
     })
 });}
