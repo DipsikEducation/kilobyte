@@ -6,24 +6,26 @@ let booksList;
 export function loadHomeBooks() {window.addEventListener("load", () =>{
     fetchTopBooks()
     .then((categories) =>{
-        if(Object.keys(categories.data.lenght !== 0 )){
+        if(Object.keys(categories.data).lenght !== 0 ){
             categoriesList.innerHTML = "";
             renderHomeCategories(categories.data);
 
         }
         else {
             categoriesList.innerHTML = "";
-            return iziToast.error({
+            iziToast.error({
                 message: "Sorry, there are no books to render",
                 position: `topRight`,
             });
         }
     })
     .catch((error) =>{
-        console.log(error)
-        return iziToast.error({
-            message: error.message,
+        console.log('Error loading data:', error)
+        iziToast.error({
+            message: "Sorry, there are no books to render",
             position: `topRight`,
+            timeout: 3000,
+            progressBar: false
         });
     })
 });}
