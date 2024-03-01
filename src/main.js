@@ -9,5 +9,5 @@
 (docs) - https://www.npmjs.com/package/swiper
 */
 
-import {loadHomeBooks} from "./js/homeRender";
-loadHomeBooks(); 
+import { loadHomeBooks } from './js/homeRender';
+loadHomeBooks();
