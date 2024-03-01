@@ -1,29 +1,59 @@
 import {fetchTopBooks, fetchSelectedCategory, fetchBookDetails} from "./fetchAPI";
 import iziToast from "izitoast";
-export
+import 'izitoast/dist/css/iziToast.min.css';
 const categoriesList = document.querySelector(".home-categories-list");
+
+const toastOptions = {
+    titleColor: '#fff',
+    titleSize: '16px',
+    titleLineHeight: '1.5',
+    messageColor: '#fff',
+    messageSize: '16px',
+    messageLineHeight: '1.5',
+    position: 'topRight',
+    timeout: 3000,
+    progressBar: false
+};
+
+const optionsIziToastWarning = {
+    ...toastOptions,
+    message: 'none',
+    backgroundColor: '#FFA000'
+};
+
+const optionsIziToastError = {
+    ...toastOptions,
+    backgroundColor: '#EF4040',
+    maxWidth: 400
+    
+};
+
 let booksList;
 export function loadHomeBooks() {window.addEventListener("load", () =>{
     fetchTopBooks()
     .then((categories) =>{
-        if(Object.keys(categories.data.lenght !== 0 )){
+        if(Object.keys(categories.data).lenght !== 0 ){
             categoriesList.innerHTML = "";
             renderHomeCategories(categories.data);
 
         }
         else {
             categoriesList.innerHTML = "";
-            return iziToast.error({
+            iziToast.error({
                 message: "Sorry, there are no books to render",
                 position: `topRight`,
             });
         }
     })
     .catch((error) =>{
-        console.log(error)
-        return iziToast.error({
-            message: error.message,
+        console.log('Error loading data:', error)
+        iziToast.info({
+            message: "Sorry, there are no books to render",
             position: `topRight`,
+            timeout: 3000,
+            progressBar: false,
+            title: 'Error',
+            ...optionsIziToastError
         });
     })
 });}

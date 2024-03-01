@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+// https://example.com/invalid_url - не рабочая ссылка для проверки ошибок
 const BASE_URL = 'https://books-backend.p.goit.global/books/';
 
 export async function fetchTopBooks() {
