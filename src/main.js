@@ -8,3 +8,6 @@
 4.Swiper 
 (docs) - https://www.npmjs.com/package/swiper
 */
+
+import {loadHomeBooks} from "./js/homeRender";
+loadHomeBooks(); 
