@@ -1,5 +1,8 @@
 export const bookListRef = document.querySelector('.home-categories-list');
 import { fetchBookDetails } from './fetchAPI';
+import { addToLocalStorage } from "./localStorage.js";
+import { getAllBooks } from "./localStorage.js";
+
 
 let modalBtnCloseRef;
 
@@ -10,20 +13,30 @@ export async function onBookClick(event) {
   if (!closestLi.hasAttribute('id') || closestLi.id === null) return;
   document.querySelector('body').classList.add('no-scroll');
 
-  const data = (await fetchBookDetails(closestLi.id)).data;
-  bookListRef.insertAdjacentHTML('afterend', renderModalWindow(data));
+  const oneBookData = (await fetchBookDetails(closestLi.id)).data;
 
+  bookListRef.insertAdjacentHTML('afterend', renderModalWindow(oneBookData));
+  const listBtnRef = document.querySelector('.book-btn');
   const backdropRef = document.querySelector('#modal-open');
   modalBtnCloseRef = document.querySelector('#modal-btn-close');
+  const listID = document.querySelector(".home-books-item")
 
   backdropRef.addEventListener('click', closeModalWindow);
   modalBtnCloseRef.addEventListener('click', closeModalWindow);
   document.addEventListener('keydown', closeModalWindow);
+  listBtnRef.addEventListener("click", (event) => addToLocalStorage(event, oneBookData))
 }
 
+
+
+
 function renderModalWindow(book) {
+  var buttonBasket;
+  if (getAllBooks().find((b) => { return b._id === book._id })) {
+    buttonBasket = "remove from the shopping list";
+  }else buttonBasket = "add to shopping list";
   return ` <div class="backdrop is-open" id="modal-open">
-     <div class="modal-container">
+    <div class="modal-container">
     <div class="modal">
     <button type="button" class="modal-close-btn" id="modal-btn-close">
           <svg class="modal-btn-icon" width="16" height="16" id="modal-btn-close">
@@ -54,7 +67,7 @@ function renderModalWindow(book) {
                 />
                 </div>
                 </a>
-                <button type="button" class="book-btn">add to shopping list</button>
+                <button type="button" class="book-btn" data-id = "${book._id}">${buttonBasket}</button>
               
   </div>
   </div> `;
@@ -75,8 +88,4 @@ function closeModalWindow(event) {
   modalBtnCloseRef.removeEventListener('click', closeModalWindow);
   document.removeEventListener('keydown', closeModalWindow);
 }
-// to main.js
-//import { onBookClick, bookListRef } from './js/modalWindowFunctions.js';
-//bookListRef.addEventListener('click', onBookClick);
-// to styles.css
-//@import url(./modalWindow.css);
+
