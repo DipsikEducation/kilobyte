@@ -1,5 +1,5 @@
 export const refs = {
-  themeCheckbox: document.querySelector('#theme-switch'),
+themeCheckbox: document.querySelector('#theme-switch'),
+categoriesRef: document.querySelector('.categories__list'),
 };
 
-const categoriesRef = document.querySelector('.categories__list');

@@ -16,12 +16,16 @@ if (localStorage.getItem('theme') === 'dark') {
 import { loadHomeBooks } from './js/homeRender';
 loadHomeBooks();
 
-import { onCategoriesClick } from './js/categories';
-onCategoriesClick();
+import { categoriesSelected } from './js/categories';
+categoriesSelected();
 
+import { refs } from './js/refs.js';
+import { onAddThemeLocalStorage } from './js/localStorage.js';
 refs.themeCheckbox.addEventListener('change', onAddThemeLocalStorage);
 
 import { onBookClick, bookListRef } from './js/modalWindowFunctions.js';
 bookListRef.addEventListener('click', onBookClick);
+
+
 
 
