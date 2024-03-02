@@ -40,17 +40,19 @@ function renderModalWindow(book) {
     <div class="modal">
     <button type="button" class="modal-close-btn" id="modal-btn-close">
           <svg class="modal-btn-icon" width="16" height="16" id="modal-btn-close">
-            <use href="./img/symbol-defs.svg#icon-x-close"></use>
+            <use href="/img/noptimizesprite.svg#icon-x-close"></use>
           </svg>
         </button>
+        <div class="book-wrap">
                 <img class="book-img" src="${book.book_image}" alt="${book.title}">
+                <div class="book-info-wrap">
                 <p class="book-title">${book.title}</p>
                 <p class="book-author">${book.author}</p>
                 <p class="book-alt-text">${book.description}</p>
                 <div class="img-wrap">
                 <a href="${book.amazon_product_url}" target="blank" >
                 <img
-                  src="./img/amazon.png"
+                  src="${amazonLogo}"
                   alt="amazon"
                   class="amazon-logo"
                   width="62"
@@ -59,12 +61,13 @@ function renderModalWindow(book) {
                 </a>
                 <a href="${book.buy_links[1].url}" target="_blank">
                 <img
-                  src="./img/book.png"
+                  src="${appleLogo}"
                   alt="apple-book"
                   class="apple-logo"
                   width="33"
                   height="32"
                 />
+                </div>
                 </div>
                 </a>
                 <button type="button" class="book-btn" data-id = "${book._id}">${buttonBasket}</button>
