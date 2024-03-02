@@ -1,13 +1,9 @@
-const categoriesRef = document.querySelector('.categories__list');
+import { refs } from './refs';
 
-categoriesRef.addEventListener('click', onCategoriesClick);
+refs.categoriesRef.addEventListener('click', categoriesSelected);
 
-export async function onCategoriesClick(e) {
-  e.preventDefault();
-}
-
-function categoriesSelected() {
-  return new Promise(resolve => {
+export async function categoriesSelected() {
+  return await new Promise(resolve => {
     document
       .getElementById('scrollableList')
       .addEventListener('click', function (e) {
@@ -26,7 +22,6 @@ function categoriesSelected() {
         selectedCategory.classList.add('selected');
         selectedCategory.textContent =
           selectedCategory.textContent.toUpperCase();
-
         resolve(selectedCategory);
       });
   });
