@@ -55,7 +55,9 @@ nextButton.addEventListener('click', () => {
   swiper.slideNext();
 });
 function supportTemplate(obj, i) {
-    return `<div class="swiper-slide supports-item">
+  return `
+  <div class="swiper-slide supports-item">
+  <span class="supports-span">0${i+1}</span>    
    <a href="${obj.url}" target="_blank">
    <img src="${obj.img}" class="support-img"/>
    </a>

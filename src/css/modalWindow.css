@@ -83,8 +83,8 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-bottom: 44px;
 }
+
 .amazon-logo {
   filter: grayscale(100%);
 }
@@ -97,6 +97,9 @@
 }
 .apple-logo:hover {
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35)) grayscale(100%);
+}
+.book-img {
+  max-width: 287px;
 }
 
 .book-btn {
@@ -114,14 +117,43 @@
   line-height: 1.28571;
   letter-spacing: -0.01em;
   color: #111;
+  margin-top: 44px;
 }
 .no-scroll {
   overflow: hidden;
 }
 
 @media (min-width: 768px) {
-}
+  .modal {
+    width: 579px;
+    max-height: 501px;
+  }
+  .book-img {
+    max-width: 192px;
+    margin-right: 24px;
+    flex-shrink: 0;
+  }
+  .book-wrap {
+    display: flex;
+  }
 
+  .book-title {
+    font-size: 24px;
+    line-height: 1.16667;
+  }
+
+  .book-author {
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+  .book-btn {
+    width: 499px;
+  }
+  .modal-close-btn {
+    width: 28px;
+    height: 28px;
+  }
+}
 @media (min-width: 1280px) {
 }
 
