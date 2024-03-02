@@ -1,0 +1,27 @@
+.title-shopping{
+margin: 40px 0 120px 20px;
+}
+.book-list{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.02em;
+text-align: center;
+color: rgba(0, 0, 0, 0.6);
+margin-bottom: 14px;
+max-width: 244px;
+margin: auto;
+}
+.box-bookslist{
+  max-width: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookslist {
+  width: 265px;
+  height: 198px;
+  margin: 0 auto;
+}
