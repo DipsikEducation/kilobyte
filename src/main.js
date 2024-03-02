@@ -19,3 +19,8 @@ loadHomeBooks();
 
 import { onCategoriesClick } from './js/categories';
 onCategoriesClick();
+
+refs.themeCheckbox.addEventListener('change', onAddThemeLocalStorage);
+
+import { onBookClick, bookListRef } from './js/modalWindowFunctions.js';
+bookListRef.addEventListener('click', onBookClick);
