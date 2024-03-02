@@ -13,7 +13,6 @@ if (localStorage.getItem('theme') === 'dark') {
   refs.themeCheckbox.checked = true;
   // Сюди треба навішати класи для темної теми або функцію яка це робитиме
 }
-
 import { loadHomeBooks } from './js/homeRender';
 loadHomeBooks();
 
@@ -24,3 +23,5 @@ refs.themeCheckbox.addEventListener('change', onAddThemeLocalStorage);
 
 import { onBookClick, bookListRef } from './js/modalWindowFunctions.js';
 bookListRef.addEventListener('click', onBookClick);
+
+

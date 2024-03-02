@@ -35,7 +35,6 @@ COLOR : #111111 Black , Title and Headers
   -webkit-text-size-adjust: 100%;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -53,7 +52,6 @@ COLOR : #111111 Black , Title and Headers
   text-decoration: none;
   padding: 0;
   margin: 0;
-
 }
 
 .list {
@@ -80,7 +78,6 @@ section {
     padding-bottom: 100px;
   }
 }
-
 
 @media (min-width: 1280px) {
   .container {
