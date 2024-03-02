@@ -1,0 +1,76 @@
+.dark-theme {
+    background-color: #202024;
+    color: #fff;
+    stroke: #fff;
+    fill: #fff
+}
+
+.dark-theme .header,
+.dark-theme .header-container {
+    background: #111;
+    border-color: #fff;
+    stroke: #fff;
+}
+
+.dark-theme .header-nav-home,
+.dark-theme .header-nav-shop {
+    color: #fff;
+}
+
+.dark-theme .header-nav-home:hover,
+.header-nav-home:focus {
+    color: #111;
+    font-weight: 700;
+}
+
+.dark-theme .header-nav-shop:hover,
+.header-nav-shop:focus {
+    color: #111;
+    font-weight: 700;
+}
+
+.dark-theme .categories__item {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-theme #icon-align-left {
+    stroke: #fff;
+}
+
+.dark-theme .main-category-title {
+    color: #fff;
+}
+
+.dark-theme .book-title {
+    color: #fff;
+}
+
+.dark-theme .see-more {
+    color: #fff;
+}
+
+.dark-theme .book-list {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-theme .all-cat-btn {
+    color: #fff;
+}
+
+.dark-theme .modal {
+    background-color: #202024;
+    color: #fff;
+}
+
+.dark-theme #modal-btn-close {
+    color: #fff;
+}
+
+.dark-theme .amazon-logo {
+    color: #fff;
+}
+
+.dark-theme .book-btn {
+    color: #fff;
+    border-color: #fff;
+}
