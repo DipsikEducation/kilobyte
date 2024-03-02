@@ -1,7 +1,7 @@
 import { fetchSelectedCategory } from "./fetchAPI";
-import { seeMoreBtn, categoriesList } from "./homeRender";
+import { seeMoreBtn, categoriesList, loadHomeBooks } from "./homeRender";
 import iziToast from "izitoast";
-const listForRender = document.querySelector(".home-categories-list");
+let listForRender;
 const sectionTitle = document.querySelector(".main-category-title");
 
 export function LoadHomeCategory(data) {
@@ -14,7 +14,7 @@ export function LoadHomeCategory(data) {
             renderCategoryBooks(category.data, categoryTitle);
         }
         else {
-            listForRender.innerHTML = "";
+            categoriesList.innerHTML = "";
             iziToast.error({
                 message: "Sorry, there are no books to render",
                 position: `topRight`,
@@ -34,22 +34,27 @@ export function LoadHomeCategory(data) {
     })
 }
 function renderCategoryBooks(category, listName){
+    categoriesList.insertAdjacentHTML("afterbegin", `<ul class="category-books-list"></ul>`);
+    listForRender = document.querySelector(".category-books-list");
     const markupCategoryBooks = category
     .map((book) => {
         return `
         <li class="home-books-item" id="${book._id}">
-            <div class="home-book-wrapper">
-                <img class="book-image" src="${book.book_image}" alt="${book.title}">
-            </div>
-            <div class="image-overlay"><p class="image-overlay-text">QUICK VIEW</p></div>
+        <div class="image-overlay">
+            <img class="book-image" src="${book.book_image}" alt="${book.title}">
+            <p class="image-overlay-text">QUICK VIEW</p>
+        </div>
             <div class="book-info">
-                <p class="book-info-title">${book.title}</p>
-                <p class="book-info-author">${book.author}</p>
+                <p class="book-title break-text">${book.title}</p>
+                <p class="book-author">${book.author}</p>
             </div>
         </li>`
     })
     .join("");
     listForRender.insertAdjacentHTML("beforeend", markupCategoryBooks);
+    listForRender.insertAdjacentHTML("afterend", `<div class="all-cat-btn-wrap"><button class="all-cat-btn">All Categories</button></div>`)
+    let allCatBtn = document.querySelector(".all-cat-btn");
+    listenAllCatBtn(allCatBtn);
     const titleArr = listName.split(" ")
     if(titleArr.length > 3){
         const middleWord = titleArr[Math.round((titleArr.length - 1) / 2)]
@@ -61,4 +66,13 @@ function renderCategoryBooks(category, listName){
         listName = listName.replace(titleArr[titleArr.length-1], `<span class="main-category-title-span">${titleArr[titleArr.length-1]}</span>`)
         sectionTitle.innerHTML = listName
     }
+}
+function listenAllCatBtn (allCatBtn){
+    allCatBtn.addEventListener("click", () => {
+        loadHomeBooks()
+        baseHomeTitle()
+    });
+}
+function baseHomeTitle(){
+    sectionTitle.innerHTML = `Best Sellers <span class="main-category-title-span">Books</span>`;
 }

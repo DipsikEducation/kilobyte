@@ -40,7 +40,7 @@ const optionsIziToastError = {
     
 };
 
-export function loadHomeBooks() {window.addEventListener("load", () =>{
+export function loadHomeBooks() {
     fetchTopBooks()
     .then((categories) =>{
         if(Object.keys(categories.data).length !== 0 ){
@@ -67,7 +67,7 @@ export function loadHomeBooks() {window.addEventListener("load", () =>{
             ...optionsIziToastError
         });
     })
-});}
+;}
 function renderHomeCategories(categories){
     const markupCategories = categories
     .map((category) =>{
@@ -75,7 +75,9 @@ function renderHomeCategories(categories){
         <li class="home-categories-item">
         <h3 class="home-category-title">${category.list_name}</h3>
         <ul class="home-books-list">${renderHomeBooks(category.books)}</ul>
-        <button class="button see-more" data-js="${category.list_name}">See more</button>
+        <div class="see-more-wrapper">
+            <button class="button see-more" data-js="${category.list_name}">See more</button>
+        </div>
         </li>`
     })
     .join("");
@@ -87,13 +89,13 @@ function renderHomeBooks(books){
     return books.map((book) => {
         return `
         <li class="home-books-item" id="${book._id}">
-            <div class="home-book-wrapper">
+            <div class="image-overlay">
                 <img class="book-image" src="${book.book_image}" alt="${book.title}">
+                <p class="image-overlay-text">QUICK VIEW</p>
             </div>
-            <div class="image-overlay"><p class="image-overlay-text">QUICK VIEW</p></div>
             <div class="book-info">
-                <p class="book-info-title">${book.title}</p>
-                <p class="book-info-author">${book.author}</p>
+                <p class="book-title break-text">${book.title}</p>
+                <p class="book-author">${book.author}</p>
             </div>
         </li>`
     })
