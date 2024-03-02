@@ -9,12 +9,13 @@ import './js/support';
 4.Swiper 
 (docs) - https://www.npmjs.com/package/swiper
 */
+import { loadHomeBooks } from './js/homeRender';
+loadHomeBooks();
+
 if (localStorage.getItem('theme') === 'dark') {
   refs.themeCheckbox.checked = true;
   // Сюди треба навішати класи для темної теми або функцію яка це робитиме
 }
-import { loadHomeBooks } from './js/homeRender';
-loadHomeBooks();
 
 import { categoriesSelected } from './js/categories';
 categoriesSelected();
