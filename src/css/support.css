@@ -1,3 +1,7 @@
+.section-support{
+  padding-left: 24px;
+}
+
 .support {
   margin-top: 40px;
   border-radius: 16px;
@@ -43,14 +47,27 @@
 .swiper {
   height: 300px;
   margin-bottom: 20px;
+  
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  display: flex;
-  justify-content: center;
+  display: flex !important;
   height: 32px !important;
+  justify-content: start
+}
+
+.supports-span{
+display: flex;
+justify-content: start;
+font-family: sans-serif;
+font-weight: 400;
+font-size: 14px;
+ line-height: 18px; 
+line-height: 1.28;
+letter-spacing: -0.04em;
+color: #fff;
 }
 
 .support-list {
