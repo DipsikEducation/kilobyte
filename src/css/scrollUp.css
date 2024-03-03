@@ -1,6 +1,44 @@
 .up-button {
   position: fixed;
   z-index: 1;
-  bottom: 0;
-  right: 0;
+  bottom: 5px;
+  right: 4px;
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 1px 5px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #9eefe1 0%,
+    #4830f0 51%,
+    #9eefe1 100%
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.up-button:hover {
+  background-position: right center;
+  color: #eac645;
+}
+
+@media (min-width: 768px) {
+  .up-button {
+    right: 12px;
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .up-button {
+    right: 4px;
+    padding: 5px 15px;
+    font-size: 14px;
+  }
 }
