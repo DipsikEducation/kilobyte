@@ -12,6 +12,8 @@ import './js/support';
 import { loadHomeBooks } from './js/homeRender';
 loadHomeBooks();
 
+
+
 if (localStorage.getItem('theme') === 'dark') {
   refs.themeCheckbox.checked = true;
   // Сюди треба навішати класи для темної теми або функцію яка це робитиме
@@ -33,9 +35,7 @@ window.addEventListener('scroll', () => {
     refs.upButton.style.display = 'block';
   }
 });
-refs.upButton.addEventListener('click', () => {
-  console.log('hello');
-});
+
 
 refs.upButton.addEventListener('click', () => {
   window.scrollTo({

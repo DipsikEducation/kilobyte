@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var iconAlignLeft = document.getElementById("icon-align-left");
   var iconUILCart = document.getElementById("icon-uil_cart");
 
-  function toggleModal() {
+function toggleModal() {
       if (modal.style.display === "block") {
           modal.style.display = "none";
           
