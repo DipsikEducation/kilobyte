@@ -17,6 +17,7 @@ loadHomeBooks();
 if (localStorage.getItem('theme') === 'dark') {
   refs.themeCheckbox.checked = true;
   // Сюди треба навішати класи для темної теми або функцію яка це робитиме
+  document.body.classList.add('dark-theme');
 }
 /*-------------------CATEGORIES----------------------*/ 
 import { categoriesSelected } from './js/categories';
