@@ -67,12 +67,12 @@ function renderCategoryBooks(category, listName){
         sectionTitle.innerHTML = listName
     }
 }
-function listenAllCatBtn (allCatBtn){
+export function listenAllCatBtn (allCatBtn){
     allCatBtn.addEventListener("click", () => {
         loadHomeBooks()
         baseHomeTitle()
     });
 }
-function baseHomeTitle(){
+export function baseHomeTitle(){
     sectionTitle.innerHTML = `Best Sellers <span class="main-category-title-span">Books</span>`;
 }
