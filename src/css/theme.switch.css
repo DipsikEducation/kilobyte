@@ -37,10 +37,16 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+
+.dark-theme ::-webkit-scrollbar-thumb {
+    background: #11111199;
+    border-radius: 12px;
+
 .dark-theme .categories__item:hover,
 .dark-theme .categories__item:active,
 .dark-theme .categories__item:focus {
     color: #eac645;
+
 }
 
 .dark-theme #icon-align-left {
