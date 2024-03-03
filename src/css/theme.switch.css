@@ -52,7 +52,13 @@
     border-radius: 12px;
 }
 
+
 .dark-theme .categories__item.selected {
+
+.dark-theme .categories__item:hover,
+.dark-theme .categories__item:active,
+.dark-theme .categories__item:focus {
+
     color: #eac645;
 }
 

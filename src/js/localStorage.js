@@ -1,5 +1,5 @@
 import { refs } from './refs';
-import { } from './modalWindowFunctions.js';
+import {} from './modalWindowFunctions.js';
 const LOCAL_STORAGE_KEY = 'modal';
 
 export function onAddThemeLocalStorage() {
@@ -18,8 +18,8 @@ export function addToLocalStorage(event, oneBookData) {
   if (event.target.textContent === 'remove from the shopping list') {
     removeFromLocalStorage(event);
     return;
-  };
-  if (!event.target.classList.contains("book-btn")) return;
+  }
+  if (!event.target.classList.contains('book-btn')) return;
   const booksArray = getAllBooks();
   booksArray.push(oneBookData);
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(booksArray));
@@ -32,12 +32,12 @@ export function getAllBooks() {
 function checkLocalBook(event) {
   const booksArray = getAllBooks();
   const currentBookId = event.target.dataset.id;
-  if (booksArray.find((book) => book._id === currentBookId)) {
+  if (booksArray.find(book => book._id === currentBookId)) {
     const listBtnRef = event.target;
     listBtnRef.textContent = 'remove from the shopping list';
   }
 }
-function removeFromLocalStorage(event) {
+export function removeFromLocalStorage(event) {
   const notesArray = getAllBooks();
   const id = notesArray.findIndex(elem => {
     return elem._id === event.target.dataset.id;
@@ -47,5 +47,4 @@ function removeFromLocalStorage(event) {
   notesArray.splice(id, 1);
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(notesArray));
   event.target.textContent = 'add to shopping list';
-  
 }
