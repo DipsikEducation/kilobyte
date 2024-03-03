@@ -38,6 +38,11 @@ COLOR : #111111 Black , Title and Headers
   -webkit-text-size-adjust: 100%;
 }
 
+body{
+  position: relative;
+  max-width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -69,6 +74,15 @@ COLOR : #111111 Black , Title and Headers
 
 section {
   padding-bottom: 40px;
+}
+
+.main-wrapper{
+  display: flex;
+}
+
+.wrapper-categories{
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
