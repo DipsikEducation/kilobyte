@@ -1,4 +1,4 @@
-.burgermenu{
+/* .burgermenu{
   background: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%);
 }
 
@@ -66,6 +66,108 @@ button {
   height: 34px;
   background: #eac645;
 
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.burger-list-btn {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.shopinglist-container {
+  display: flex;
+}
+
+.back-img-burgermenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.list-icon {
+  vertical-align: middle;
+} */
+
+
+
+
+.burgermenu-dec{
+  background: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%), url(./img/bgburger.png);
+ 
+}
+
+.burger-menu-modal-content {
+  margin-top: -100px;
+}
+
+.burger-menu-modal-content nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.burger-menu-modal-content nav ul li {
+  margin-bottom: 10px;
+}
+
+.burger-menu-modal-content nav ul li a {
+  text-decoration: none;
+}
+
+.open-burger-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.burger-img-btn:hover svg {
+  fill: #4f2ee8;
+}
+
+.open-burger-btn:hover .burger-img-btn {
+  fill: #4f2ee8;
+}
+
+.burger-menu-modal {
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.back-img-burgermenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.burger-home-btn {
+  border-radius: 36px;
+  padding: 8px 16px;
+  width: 72px;
+  height: 34px;
+  background: #eac645;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
