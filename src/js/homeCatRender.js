@@ -76,3 +76,4 @@ export function listenAllCatBtn (allCatBtn){
 export function baseHomeTitle(){
     sectionTitle.innerHTML = `Best Sellers <span class="main-category-title-span">Books</span>`;
 }
+
