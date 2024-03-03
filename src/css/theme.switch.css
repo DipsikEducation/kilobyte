@@ -11,10 +11,10 @@
     border-color: #fff;
     stroke: #fff;
 }
-/* 
-.dark-theme .header-logo-icon #icon-logotip {
-    stroke: #fff;
-} */
+
+.dark-theme .header-icon-two {
+    fill: #f3f3f3;
+}
 
 .dark-theme .header-nav-home,
 .dark-theme .header-nav-shop {
@@ -33,6 +33,15 @@
     font-weight: 700;
 }
 
+.dark-theme .header-nav-shop:hover use {
+    fill: #000;
+    stroke: #111;
+}
+
+.dark-theme .header-nav-icon {
+    fill: white;
+}
+
 .dark-theme .categories__item {
     color: rgba(255, 255, 255, 0.6);
 }
@@ -41,12 +50,10 @@
 .dark-theme ::-webkit-scrollbar-thumb {
     background: #11111199;
     border-radius: 12px;
+}
 
-.dark-theme .categories__item:hover,
-.dark-theme .categories__item:active,
-.dark-theme .categories__item:focus {
+.dark-theme .categories__item.selected {
     color: #eac645;
-
 }
 
 .dark-theme #icon-align-left {
