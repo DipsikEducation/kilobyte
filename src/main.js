@@ -34,6 +34,8 @@ bookListRef.addEventListener('click', onBookClick);
 window.addEventListener('scroll', () => {
   if (window.scrollY > 100) {
     refs.upButton.style.display = 'block';
+  } else {
+     refs.upButton.style.display = 'none';
   }
 });
 
@@ -43,7 +45,6 @@ refs.upButton.addEventListener('click', () => {
     top: 0,
     behavior: 'smooth',
   });
-  refs.upButton.style.display = 'none';
 });
 
 
