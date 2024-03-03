@@ -185,19 +185,45 @@
   height="300" 
   />
 </div>
+        <div class="burgermenu">
+      <button class="open-burger-btn button" type="button" id="toggleBurgerMenuModalBtn">
+        <svg class="burger-img-btn" id="icon-align-left" width="28" height="28">
+          <use href="/kilobyte/assets/noptimizesprite-267f7d9f.svg#icon-align-left"></use>
+      </svg>
+      </button>
+  
+      <div id="burgermenu" class="burger-menu-modal">
+        <div class="burger-menu-modal-content">
+          
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html" class="burger-home-btn">Home</a>
+              </li>
+              <li>
+                <div class="shopinglist-container">
+                <a href="../partials/shopinglist.html" class="burger-list-btn"
+                  >shopinglist<span class="list-icon">
+                    <svg class="burger-img-btn" id="icon-uil_cart" width="20" height="20">
+                      <use href="/kilobyte/assets/noptimizesprite-267f7d9f.svg#iicon-uil_cart"></use>
+                  </svg>
+                </span></a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <img src="../img/bgburger.png" alt="books" class="back-img-burgermenu">
 
     <span class="loader"></span>
 
     <span id="modal"></span>
 
-    <button type="button"  class="up-button">Up</button>
+    <button type="button" display='none' class="up-button">Up</button>
    
-     
-
-
-    
-
-
     
   </body>
 </html>
