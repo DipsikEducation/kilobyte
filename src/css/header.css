@@ -215,6 +215,7 @@
         background: #4f2ee8;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 14px;
     }
 }
