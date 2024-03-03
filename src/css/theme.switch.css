@@ -11,6 +11,10 @@
     border-color: #fff;
     stroke: #fff;
 }
+/* 
+.dark-theme .header-logo-icon #icon-logotip {
+    stroke: #fff;
+} */
 
 .dark-theme .header-nav-home,
 .dark-theme .header-nav-shop {
@@ -33,6 +37,12 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+.dark-theme .categories__item:hover,
+.dark-theme .categories__item:active,
+.dark-theme .categories__item:focus {
+    color: #eac645;
+}
+
 .dark-theme #icon-align-left {
     stroke: #fff;
 }
@@ -42,6 +52,10 @@
 }
 
 .dark-theme .book-title {
+    color: #fff;
+}
+
+.dark-theme .book-alt-text {
     color: #fff;
 }
 
@@ -59,15 +73,17 @@
 
 .dark-theme .modal {
     background-color: #202024;
+    border-color: #fff;
     color: #fff;
 }
 
-.dark-theme #modal-btn-close {
-    color: #fff;
+.dark-theme .modal-btn-icon {
+    stroke: #fff;
 }
 
 .dark-theme .amazon-logo {
     color: #fff;
+    filter: brightness(0) invert(1);
 }
 
 .dark-theme .book-btn {
