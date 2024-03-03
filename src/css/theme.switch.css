@@ -53,7 +53,7 @@
 }
 
 
-.dark-theme .categories__item.selected {
+.dark-theme .categories__item.selected {}
 
 .dark-theme .categories__item:hover,
 .dark-theme .categories__item:active,
