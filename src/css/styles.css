@@ -38,6 +38,10 @@ COLOR : #111111 Black , Title and Headers
   -webkit-text-size-adjust: 100%;
 }
 
+body{
+  position: relative;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

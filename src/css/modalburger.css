@@ -101,13 +101,18 @@ button {
   vertical-align: middle;
 } */
 
+.burger-wrapper{
+  background: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%), url(./img/bgburger.png);
+  position: absolute;
+  z-index: 999;
+  
+}
 
 
-
-.burgermenu-dec{
+/* .burgermenu-dec{
   background: linear-gradient(180deg, #4f2ee8 0%, #dcdcdc 100%), url(./img/bgburger.png);
  
-}
+} */
 
 .burger-menu-modal-content {
   margin-top: -100px;
