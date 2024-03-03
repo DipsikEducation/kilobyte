@@ -17,7 +17,7 @@ COLOR : #111111 Black , Title and Headers
 @import url(./support.css);
 @import url(./shoppingList.css);
 @import url(./modalWindow.css);
-@import url(./modalburger.css);
+/* @import url(./modalburger.css); */
 @import url(./theme.switch.css);
 @import url(./scrollUp.css);
 @import url(./loader.css);
@@ -40,6 +40,7 @@ COLOR : #111111 Black , Title and Headers
 
 body{
   position: relative;
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -73,6 +74,15 @@ body{
 
 section {
   padding-bottom: 40px;
+}
+
+.main-wrapper{
+  display: flex;
+}
+
+.wrapper-categories{
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
