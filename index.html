@@ -19,7 +19,7 @@
     <script type="module" crossorigin src="/kilobyte/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/kilobyte/assets/vendor-b7a1aa6d.js">
     <link rel="stylesheet" href="/kilobyte/assets/vendor-ed6a6904.css">
-    <link rel="stylesheet" href="/kilobyte/assets/index-c6d43deb.css">
+    <link rel="stylesheet" href="/kilobyte/assets/index-33b8ed83.css">
   </head>
   <body>
 <div class="container">
@@ -27,8 +27,11 @@
     <div class="container header-container">
         <div class="header-logo">
             <a href="./index.html" class="header-link">
-                <svg class="header-logo-icon" id="icon-logotip" width="24" height="24">
-                    <use href="/kilobyte/assets/noptimizesprite-adbf2bd6.svg#icon-logotip"></use>
+                <svg class="header-icon-one" id="icon-logo" width="24" height="24">
+                    <use href="/kilobyte/assets/symbol-defs-63559100.svg#icon-logo"></use>
+                </svg>
+                <svg class="header-icon-two" id="icon-Bookshelf" width="77" height="14">
+                    <use href="/kilobyte/assets/noptimizesprite-adbf2bd6.svg#icon-Bookshelf"></use>
                 </svg>
             </a>
         </div>
@@ -47,7 +50,7 @@
             </div>
             <div class="header-burger">
                     <svg class="btn-burger-icon" id="icon-align-left" width="28" height="28">
-                        <use href="/kilobyte/assets/noptimizesprite-adbf2bd6.svg#icon-align-left"></use>
+                        <use id="modal-burger-btn" href="/kilobyte/assets/noptimizesprite-adbf2bd6.svg#icon-align-left"></use>
                     </svg>
             </div>
             <div class="header-btn-up">
@@ -61,7 +64,7 @@
         </div>
     </div>
 </header>
-    <div class="main-wrapper">
+    <div class="main-wrapper ">
       <div class="wrapper-categories">
     <section class="section" id="categories">
   <div class="categories__block container">
@@ -207,40 +210,47 @@
   </body>
 </html>
  -->
-    <section class="burger-wrapper container">  
-<!-- <div class="container"> -->
-  <button class="open-burger-btn button" type="button" id="toggleBurgerMenuModalBtn">
-    <svg class="burger-img-btn" id="icon-align-left" width="28" height="28">
-      <use href="/kilobyte/assets/noptimizesprite-adbf2bd6.svg#icon-align-left"></use>
-    </svg>
-  </button>
-
-  <div id="burgermenu" class="burger-menu-modal">
-    <div class="burger-menu-modal-content">
-
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html" class="burger-home-btn">Home</a>
-          </li>
-          <li>
-            <div class="shopinglist-container">
-              <a href="./partials/shopinglist.html" class="burger-list-btn">shopinglist<span class="list-icon">
-                  <svg class="burger-img-btn" id="icon-uil_cart" width="20" height="20">
-                    <use href="/kilobyte/assets/noptimizesprite-adbf2bd6.svg#icon-uil_cart"></use>
-                  </svg>
-                </span></a>
-            </div>
-          </li>
-        </ul>
-      </nav>
+    <!-- <section class="backdrop">
+    <div class="burg-cont container">
+      <button
+        class="open-burger-btn button"
+        type="button"
+        id="toggleBurgerMenuModalBtn"
+      >
+        <svg class="burger-img-btn" id="icon-align-left" width="28" height="28">
+          <use href="./img/noptimizesprite.svg#icon-align-left"></use>
+        </svg>
+      </button>
+  
+      <div id="burgermenu" class="burger-menu-modal">
+        <div class="burger-menu-modal-content">
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html" class="burger-home-btn">Home</a>
+              </li>
+              <li>
+                <div class="shopinglist-container">
+                  <a href="./partials/shopinglist.html" class="burger-list-btn"
+                    >shopinglist<span class="list-icon">
+                      <svg
+                        class="burger-img-btn"
+                        id="icon-uil_cart"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./img/noptimizesprite.svg#icon-uil_cart"></use>
+                      </svg> </span
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <img src="./img/bgburger.png" alt="books" class="back-img-burgermenu" />
     </div>
-  </div>
-<!-- </div> -->
-
-<img src="/kilobyte/assets/bgburger-1619a24e.png" alt="books" class="back-img-burgermenu">
-
-</section>
+  </section> -->
 
     <span class="loader"></span>
 
