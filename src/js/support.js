@@ -53,6 +53,7 @@ const nextButton = document.querySelector('.swiper-button-next');
 
 nextButton.addEventListener('click', () => {
   swiper.slideNext();
+  nextButton.classList.toggle("flip-button");
 });
 function supportTemplate(obj, i) {
   return `<div class="swiper-slide supports-item">

@@ -9,7 +9,7 @@ COLOR : #111111 Black , Title and Headers
  #FFFFFF White ,
 
 */
-
+@import url(./pagination.css);
 @import url(./reset.css);
 @import url(./header.css);
 @import url(./categories.css);

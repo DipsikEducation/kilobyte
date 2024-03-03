@@ -105,6 +105,12 @@ color: #fff;
   margin: 0 auto;
   padding: 0;
   display: flex;
+  transition: all 1s;
+}
+
+.flip-button{
+transform: rotateZ(180deg);
+
 }
 
 .support-btn-svg {
