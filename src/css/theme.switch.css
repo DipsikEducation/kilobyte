@@ -41,7 +41,7 @@
 .dark-theme ::-webkit-scrollbar-thumb {
     background: #11111199;
     border-radius: 12px;
-
+}
 .dark-theme .categories__item:hover,
 .dark-theme .categories__item:active,
 .dark-theme .categories__item:focus {
