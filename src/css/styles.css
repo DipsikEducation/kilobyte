@@ -15,10 +15,10 @@ COLOR : #111111 Black , Title and Headers
 @import url(./categories.css);
 @import url(./home.css);
 @import url(./support.css);
-@import url(./shoppingList.css);
 @import url(./modalWindow.css);
-/* @import url(./modalburger.css); */
+@import url(./shoppingList.css);
 @import url(./theme.switch.css);
+/* @import url(./modalburger.css); */
 @import url(./scrollUp.css);
 @import url(./loader.css);
 
