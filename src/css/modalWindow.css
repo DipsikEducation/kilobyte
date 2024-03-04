@@ -41,6 +41,7 @@
   right: 12px;
   height: 16px;
   padding: 0;
+  background-color: transparent;
 }
 .modal-btn-icon {
   stroke: #111;
@@ -126,6 +127,7 @@
   color: #111;
   margin-top: 44px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
 }
 .book-btn:hover,
 .book-btn:focus {

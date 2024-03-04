@@ -111,6 +111,7 @@
 
 
 @media (min-width: 768px) {
+    
     .header-logo {
         margin: 0;
     }
@@ -219,6 +220,7 @@
 }
 
 @media (min-width: 1280px) {
+
     .header-block {
         margin-left: 614px;
     }

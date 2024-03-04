@@ -1,5 +1,15 @@
+
 * {
   box-sizing: border-box;
+}
+@import url(./header.css);
+@import url(./support.css);
+
+.shopinglist-section{
+  display: flex;
+  flex-direction: row-reverse;
+    gap: 40px;
+    display: flex;
 }
 
 .title-shopping {

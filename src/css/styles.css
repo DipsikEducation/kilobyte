@@ -10,6 +10,7 @@ COLOR : #111111 Black , Title and Headers
 
 */
 
+
 @import url(./reset.css);
 @import url(./header.css);
 @import url(./categories.css);
@@ -36,6 +37,12 @@ COLOR : #111111 Black , Title and Headers
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body{
