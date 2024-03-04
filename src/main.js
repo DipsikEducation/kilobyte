@@ -12,7 +12,7 @@ import './js/support';
 import { loadHomeBooks } from './js/homeRender';
 loadHomeBooks();
 
-// import { toggleModal } from './js/modalburger.js';
+import { toggleModal } from './js/modalburger.js';
 
 if (localStorage.getItem('theme') === 'dark') {
   refs.themeCheckbox.checked = true;
@@ -48,4 +48,10 @@ refs.upButton.addEventListener('click', () => {
 });
 
 
+
+refs.burgerBtn.addEventListener("click", () => {
+  burgerCont.classList.toggle("is-open")
+  body.classList.toggle("modal-open")
+  toggleModal()
+});
 
