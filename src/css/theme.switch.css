@@ -53,14 +53,13 @@
 }
 
 
-.dark-theme .categories__item.selected {}
-
-.dark-theme .categories__item:hover,
-.dark-theme .categories__item:active,
-.dark-theme .categories__item:focus {
-
+.dark-theme .categories__item.selected {
     color: #eac645;
 }
+
+
+
+   
 
 .dark-theme #icon-align-left {
     stroke: #fff;
