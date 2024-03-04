@@ -13,14 +13,15 @@
     
     <script type="module" crossorigin src="/kilobyte/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/kilobyte/assets/vendor-b7a1aa6d.js">
-    <link rel="modulepreload" crossorigin href="/kilobyte/assets/localStorage-35efd331.js">
+    <link rel="modulepreload" crossorigin href="/kilobyte/assets/localStorage-3ba24bac.js">
+    <link rel="stylesheet" href="/kilobyte/assets/localStorage-955f55b1.css">
     <link rel="stylesheet" href="/kilobyte/assets/vendor-ed6a6904.css">
-    <link rel="stylesheet" href="/kilobyte/assets/localStorage-9906a838.css">
   </head>
   <body>
     <header id="header" class="header">
     <div class=" header-container"> 
         <div class="header-logo">
+            <div class="wrapper-decor-head">
             <a href="./index.html" class="header-link">
                 <svg class="header-icon-one" id="icon-logo" width="24" height="24">
                     <use href="/kilobyte/assets/symbol-defs-63559100.svg#icon-logo"></use>
@@ -38,6 +39,7 @@
                 </svg>
             </a>
         </nav>
+        </div>
         <div class="header-block">
             <div class="header-switcher">
                 <input type="checkbox" id="theme-switch" class="header-switch" />
@@ -48,19 +50,20 @@
                         <use id="modal-burger-btn" href="/kilobyte/assets/noptimizesprite-adbf2bd6.svg#icon-align-left"></use>
                     </svg>
             </div>
-            <div class="header-btn-up">
+            <!-- <div class="header-btn-up">
                 <button class="header-btn">Sing up
                     <a href=""></a>
                     <svg class="header-btn-icon" id="icon-arrow-narrow-right" width="20" height="20">
-                        <use href="/kilobyte/assets/noptimizesprite-adbf2bd6.svg#icon-arrow-narrow-right"></use>
+                        <use href="./img/noptimizesprite.svg#icon-arrow-narrow-right"></use>
                     </svg>
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
 </header>
     <section class="shopinglist-section ">
     <div class="container">
+      <div class="wrapper-shop-list">
     <section class="section-support">
 <div class="support">
   <div class="support-container ">
@@ -83,7 +86,7 @@
 </div>
 </section>
 
-
+        <div class="warapper-shoplist-decor">
     <h2 class="main-category-title title-shopping">
       Shopping <span class="main-category-title-span">List</span>
     </h2>
@@ -93,7 +96,7 @@
       </p>
       <img
         class="bookslist"
-        src="../img/bookslist.png"
+        src="/kilobyte/assets/bookslist-229fd7ef.png"
         alt="empty cart"
         width="300"
         height="300"
@@ -102,6 +105,8 @@
     <div class="shopping-list-wrap">
       <ul class="shopping-list" id="shopping-list"></ul>
     </div>
+  </div>
+  </div>
   </div>
   </section>
     <!-- <script type="module" src="./main.js"></script> -->
