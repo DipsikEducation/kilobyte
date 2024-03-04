@@ -1,16 +1,18 @@
 .support {
   margin-top: 40px;
   border-radius: 16px;
-  width: 356px;
+  width: 335px;
   box-shadow: 0 10px 10px 0 rgba(245, 245, 247, 0.1);
   background: radial-gradient(
     189.32% 190.93% at 59.76% -23.42%,
     rgb(79, 46, 232) 18.02733987569809%,
     rgb(255, 255, 255) 100%
   );
+ 
 }
 
 .support-container {
+  max-width: 335px;
   max-height: 474px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -112,3 +114,27 @@ color: #fff;
   width: 14px;
   height: 8px;
 }
+
+@media (min-width: 768px){
+  .section-support{
+    padding: 0;
+  }
+
+  .support{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .support{
+    width: 356px;
+    
+  }
+
+  .support-container{
+    width: 356px;
+  }
+
+}
+

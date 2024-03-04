@@ -62,7 +62,7 @@ button {
   vertical-align: middle;
 } */
 
-.backdrop {
+.backdrop-burger {
   position: fixed;
   width: 375px;
   top: 64px;
@@ -136,13 +136,13 @@ button {
   z-index: -1;
 }
 
-.is-open {
+.is-open-burger {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   overflow: hidden;
 }
 
-.modal-open {
+.modal-open-burger {
   overflow: hidden;
 }

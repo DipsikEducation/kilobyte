@@ -9,6 +9,7 @@
 @media (max-width: 768px) {
   .categories__list {
     max-width: 375px;
+    height: 472px;
     display: flex;
     font-family: DM Sans;
     font-size: 16px;
@@ -38,6 +39,7 @@
 @media (min-width: 768px) {
   .categories__list {
     max-width: 375px;
+    height: 472px;
     display: flex;
     font-family: DM Sans;
     font-size: 16px;
@@ -55,7 +57,7 @@
   }
 
   #scrollableList {
-    max-height: 413px;
+    max-height: 472px;
     overflow-y: auto;
   }
 }

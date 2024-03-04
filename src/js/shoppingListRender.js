@@ -60,3 +60,17 @@ function markupShoppingList(book) {
     </div>
   </li>`;
 }
+window.addEventListener('resize', function() {
+    addDisplayPropertyToSupportClass();
+});
+
+function addDisplayPropertyToSupportClass() {
+    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    const supportElement = document.querySelector('.support');
+
+    if (screenWidth > 1440 && supportElement) {
+        supportElement.style.display = 'block';
+    } else {
+        supportElement.style.display = 'none';
+    }
+}

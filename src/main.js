@@ -12,11 +12,11 @@ import './js/support';
 import { loadHomeBooks } from './js/homeRender';
 loadHomeBooks();
 
-import { toggleModal } from './js/modalburger.js';
+import { toggleModal } from './js/modalburger.js';  
 
 refs.burgerBtn.addEventListener('click', () => {
-refs.burgerCont.classList.toggle('is-open');
-refs.body.classList.toggle('modal-open');
+refs.burgerCont.classList.toggle('is-open-burger');
+refs.body.classList.toggle('modal-open-berger');
 toggleModal();
 });
 
@@ -55,9 +55,4 @@ refs.upButton.addEventListener('click', () => {
 
 
 
-refs.burgerBtn.addEventListener("click", () => {
-  burgerCont.classList.toggle("is-open")
-  body.classList.toggle("modal-open")
-  toggleModal()
-});
 

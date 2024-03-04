@@ -5,12 +5,18 @@
 @import url(./header.css);
 @import url(./support.css);
 
+
+.remove-support{
+  display: none;
+}
+
 .shopinglist-section{
   display: flex;
   flex-direction: row-reverse;
     gap: 40px;
     display: flex;
 }
+
 
 .title-shopping {
   margin: 40px 0 40px 20px;
@@ -120,6 +126,7 @@
   display: none;
 }
 @media (min-width: 768px) {
+
   .shopping-list-item {
     max-width: 704px;
     height: 213px;
