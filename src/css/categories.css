@@ -21,12 +21,8 @@
     /* margin: 40px 0; */
   }
 
-  .categories__block{
+  .categories__block {
     padding: 0;
-  }
-
-  .categories__item {
-    cursor: pointer;
   }
 
   #scrollableList {
@@ -50,10 +46,6 @@
     /* margin: 40px 32px 100px 0; */
   }
 
-  .categories__item {
-    cursor: pointer;
-  }
-
   #scrollableList {
     max-height: 413px;
     overflow-y: auto;
@@ -66,6 +58,11 @@
     /* margin: 40px 40px 86px 0; */
   }
 }
+
+.categories__item {
+  cursor: pointer;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
 .categories__item.selected {
   font-family: DM Sans;
   font-size: 16px;
@@ -74,5 +71,10 @@
   letter-spacing: -0.02em;
   text-align: left;
   text-transform: uppercase;
+  color: #4f2ee8;
+}
+
+.categories__item:hover,
+.categories__item:focus {
   color: #4f2ee8;
 }
