@@ -12,7 +12,7 @@ import './js/support';
 import { loadHomeBooks } from './js/homeRender';
 loadHomeBooks();
 
-
+// import { toggleModal } from './js/modalburger.js';
 
 if (localStorage.getItem('theme') === 'dark') {
   refs.themeCheckbox.checked = true;
@@ -46,5 +46,6 @@ refs.upButton.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
 
 

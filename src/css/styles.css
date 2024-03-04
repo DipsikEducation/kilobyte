@@ -3,22 +3,22 @@
 FONTS: DM Sans 400,500,700 + italic
 
 COLOR : #111111 Black , Title and Headers
- #202024 Grey , description main text color
- #4F2EE8 Violet , HOVER - white variable
- #EAC645 Yellow , Hover - Dark variable
- #FFFFFF White ,
+#202024 Grey , description main text color
+#4F2EE8 Violet , HOVER - white variable
+#EAC645 Yellow , Hover - Dark variable
+#FFFFFF White ,
 
 */
-@import url(./pagination.css);
+
 @import url(./reset.css);
 @import url(./header.css);
 @import url(./categories.css);
 @import url(./home.css);
 @import url(./support.css);
-@import url(./shoppingList.css);
 @import url(./modalWindow.css);
-/* @import url(./modalburger.css); */
+@import url(./shoppingList.css);
 @import url(./theme.switch.css);
+/* @import url(./modalburger.css); */
 @import url(./scrollUp.css);
 @import url(./loader.css);
 
@@ -36,6 +36,16 @@ COLOR : #111111 Black , Title and Headers
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -69,6 +79,15 @@ COLOR : #111111 Black , Title and Headers
 
 section {
   padding-bottom: 40px;
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.wrapper-categories {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {

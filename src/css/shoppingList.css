@@ -1,27 +1,161 @@
-.title-shopping{
-margin: 40px 0 120px 20px;
+
+* {
+  box-sizing: border-box;
 }
-.book-list{
+@import url(./header.css);
+@import url(./support.css);
+
+.shopinglist-section{
+  display: flex;
+  flex-direction: row-reverse;
+    gap: 40px;
+    display: flex;
+}
+
+.title-shopping {
+  margin: 40px 0 40px 20px;
+}
+.book-list {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 14px;
-line-height: 129%;
-letter-spacing: -0.02em;
-text-align: center;
-color: rgba(0, 0, 0, 0.6);
-margin-bottom: 14px;
-max-width: 244px;
-margin: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 14px;
+  max-width: 244px;
+  margin: auto;
 }
-.box-bookslist{
-  max-width: 265px;
+.box-bookslist {
+  /* max-width: 265px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  margin-top: 120px;
 }
 
 .bookslist {
   width: 265px;
   height: 198px;
   margin: 0 auto;
+}
+/* --------------------------------------------*/
+.shopping-list-item {
+  border: 2px solid rgba(79, 46, 232, 0.4);
+  border-radius: 16px;
+  padding: 14px;
+  max-width: 335px;
+  max-height: 220px;
+  display: flex;
+  gap: 14px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.shopping-item-img {
+  max-width: 98px;
+  height: 139px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+.shopping-book-title {
+  margin-top: 0;
+  max-width: 144px;
+}
+
+.shopping-book-category {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  color: #b4afaf;
+  width: 150px;
+}
+
+.author-shops-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-info-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+}
+
+.shopping-amazon-logo {
+  width: 32px;
+  height: 11px;
+}
+.shopping-apple-logo {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-deleteBtn {
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: blueviolet;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-trash {
+  fill: violet;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.shopping-img-wrap {
+  margin-top: 0;
+  gap: 8px;
+}
+.emptyShoppingList {
+  display: none;
+}
+@media (min-width: 768px) {
+  .shopping-list-item {
+    max-width: 704px;
+    height: 213px;
+    padding: 24px;
+  }
+  .shopping-book-title {
+    max-width: 500px;
+  }
+  .shopping-book-category {
+    max-width: 500px;
+  }
+  .shopping-item-img {
+    max-width: 116px;
+    height: 165px;
+  }
+  .icon-deleteBtn {
+    width: 34px;
+    height: 34px;
+  }
+  .shopping-amazon-logo {
+    width: 48px;
+    height: 15px;
+  }
+  .shopping-apple-logo {
+    width: 28px;
+    height: 28px;
+  }
+  .shopping-img-wrap {
+    gap: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .shopping-list-item {
+    max-width: 996px;
+  }
+}
+
+@media (min-width: 1440px) {
 }
