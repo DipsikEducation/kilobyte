@@ -16,15 +16,13 @@
 }
 
 .header-container {
-    border: 1.50px solid #111;
-    border-radius: 0 0 8px 8px;
     max-width: 375px;
     height: 64px;
     background: #fff;
     display: flex;
     align-items: center;
-    margin-left: auto;
-   justify-content: space-between;
+    justify-content: space-between;
+    
 }
 
 .header-logo {
@@ -262,5 +260,11 @@
 
     .header-block {
         margin-left: 614px;
+    }
+}
+
+@media (min-width: 1440px){
+    .header-container{
+        max-width: 1440px;
     }
 }
