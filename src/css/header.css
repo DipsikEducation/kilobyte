@@ -1,4 +1,7 @@
 .header {
+    overflow: hidden;
+    background-color: #fff;
+    top: 0;
     left: 0;
 }
 
