@@ -16,10 +16,11 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/kilobyte/assets/vendor-b7a1aa6d.js"></script>
-    <script type="module" crossorigin src="/kilobyte/assets/main-009f9e52.js"></script>
-    <link rel="stylesheet" href="/kilobyte/assets/main-55f8e37a.css">
+    <script type="module" crossorigin src="/kilobyte/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/kilobyte/assets/vendor-b7a1aa6d.js">
+    <link rel="modulepreload" crossorigin href="/kilobyte/assets/localStorage-cf111705.js">
     <link rel="stylesheet" href="/kilobyte/assets/vendor-ed6a6904.css">
+    <link rel="stylesheet" href="/kilobyte/assets/localStorage-fb712b54.css">
   </head>
   <body>
 <div class="container">
@@ -67,7 +68,7 @@
     <div class="main-wrapper ">
       <div class="wrapper-categories">
     <section class="section" id="categories">
-  <div class="categories__block container">
+  <div class="categories__block ">
     <ul class="categories__list" id="scrollableList">
       <li class="categories__item" data-category="all categories">
         All categories
@@ -148,7 +149,7 @@
   </div>
 </section>
 
-    <section class="section-support container">
+    <section class="section-support">
 <div class="support">
   <div class="support-container ">
     <div class="support-div-title">
