@@ -1,19 +1,25 @@
 .header {
-    border: 1.50px solid #111;
+   border: 1.50px solid #111;
     border-radius: 0 0 8px 8px;
    max-width: 1440px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header-container {
+    border: 1.50px solid #111;
+    border-radius: 0 0 8px 8px;
+    max-width: 375px;
     height: 64px;
     background: #fff;
     display: flex;
     align-items: center;
-   
+    justify-content: space-around;
+
+
 }
 
 .header-logo {
@@ -116,7 +122,11 @@
 
 
 @media (min-width: 768px) {
-    
+    .header-container {
+        max-width: 768px;
+        height: 72px;
+    }
+
     .header-logo {
         margin: 0;
     }
@@ -144,6 +154,8 @@
         letter-spacing: -0.04em;
         text-transform: uppercase;
         color: #111;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1);
+
     }
 
     .header-nav-home:hover,
@@ -171,6 +183,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1);
     }
 
     .header-nav-shop:hover,
@@ -187,13 +200,23 @@
         background: #eac645;
     }
 
+    .active {
+        font-weight: 700;
+        color: #111;
+        border-radius: 36px;
+        padding: 8px 16px;
+        width: 72px;
+        height: 34px;
+        background: #eac645;
+    }
+
     .header-nav-icon {
         fill: #000;
     }
 
-    .header-block {
+    /* .header-block {
         margin-left: 88px;
-    }
+    } */
 
     .header-burger {
         display: none;
@@ -201,6 +224,7 @@
 
     .header-btn-up {
         display: flex;
+        position: relative;
     }
 
     .header-btn {
@@ -218,13 +242,17 @@
 
     .header-btn:hover {
         background: linear-gradient(to right, rgb(158, 239, 225) 0%, rgb(72, 48, 240) 51%, rgb(158, 239, 225) 100%);
-    background-size: 200%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-    transition: all 0.5s ease 0s;
+        background-size: 200%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+        transition: all 0.5s ease 0s;
     }
 }
 
 @media (min-width: 1280px) {
+    .header-container {
+        max-width: 1280px;
+        height: 72px;
+    }
 
     .header-block {
         margin-left: 614px;
