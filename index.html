@@ -19,7 +19,7 @@
     <script type="module" crossorigin src="/kilobyte/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/kilobyte/assets/vendor-b7a1aa6d.js">
     <link rel="stylesheet" href="/kilobyte/assets/vendor-ed6a6904.css">
-    <link rel="stylesheet" href="/kilobyte/assets/index-33b8ed83.css">
+    <link rel="stylesheet" href="/kilobyte/assets/index-28b7c948.css">
   </head>
   <body>
 <div class="container">
@@ -188,6 +188,72 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
+    <header id="header" class="header">
+    <div class="container header-container">
+        <div class="header-logo">
+            <a href="./index.html" class="header-link">
+                <svg class="header-icon-one" id="icon-logo" width="24" height="24">
+                    <use href="./img/symbol-defs.svg#icon-logo"></use>
+                </svg>
+                <svg class="header-icon-two" id="icon-Bookshelf" width="77" height="14">
+                    <use href="./img/noptimizesprite.svg#icon-Bookshelf"></use>
+                </svg>
+            </a>
+        </div>
+        <nav class="header-nav">
+            <a class="header-nav-home" href="./index.html">HOME</a>
+            <a class="header-nav-shop" href="../partials/shopinglist.html">SHOPPING LIST
+                <svg class="header-nav-icon" id="icon-uil_cart" width="20" height="20">
+                    <use href="./img/noptimizesprite.svg#icon-uil_cart"></use>
+                </svg>
+            </a>
+        </nav>
+        <div class="header-block">
+            <div class="header-switcher">
+                <input type="checkbox" id="theme-switch" class="header-switch" />
+                <label for="theme-switch" class="header-switch-label"></label>
+            </div>
+            <div class="header-burger">
+                    <svg class="btn-burger-icon" id="icon-align-left" width="28" height="28">
+                        <use id="modal-burger-btn" href="./img/noptimizesprite.svg#icon-align-left"></use>
+                    </svg>
+            </div>
+            <div class="header-btn-up">
+                <button class="header-btn">Sing up
+                    <a href=""></a>
+                    <svg class="header-btn-icon" id="icon-arrow-narrow-right" width="20" height="20">
+                        <use href="./img/noptimizesprite.svg#icon-arrow-narrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="shopinglist-section ">
+    <div class="container">
+    <section class="section-support container">
+<div class="support">
+  <div class="support-container ">
+    <div class="support-div-title">
+      <h3 class="support-title">Support Ukraine</h3>
+      <svg class="support-svg-title">
+        <use href="./img/noptimizesprite.svg#icon-trizub"></use>
+      </svg>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper js-support-list"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <button class="support-btn swiper-button-next" aria-label="Scroll down">
+      <svg class="support-btn-svg">
+        <use href="./img/symbol-defs.svg#icon-fi-rr-small-down"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+</section>
+
+
     <h2 class="main-category-title title-shopping">
       Shopping <span class="main-category-title-span">List</span>
     </h2>
@@ -206,6 +272,9 @@
     <div class="shopping-list-wrap">
       <ul class="shopping-list" id="shopping-list"></ul>
     </div>
+  </div>
+  </section>
+    <script type="module" src="../main.js"></script>
     <script type="module" src="../js/shoppingListRender.js"></script>
   </body>
 </html>
