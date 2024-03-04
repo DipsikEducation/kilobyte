@@ -110,7 +110,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
     padding: 0 24px;
@@ -125,7 +125,7 @@ section {
     display: flex;
     flex-direction: row;
   }
-}
+} */
 
 @media (min-width: 1440px) {
   .container {
@@ -134,5 +134,15 @@ section {
    
   .wrapper-categories{
     display: block;
+  }
+  
+  section {
+    padding-bottom: 40px;
+  }
+
+  .main-wrapper{
+    
+    display: flex;
+    flex-direction: row;
   }
 }

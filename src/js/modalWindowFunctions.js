@@ -1,3 +1,5 @@
+import icon from '/img/noptimizesprite.svg'
+
 export const bookListRef = document.querySelector('.home-categories-list');
 const modalPlaceRef = document.querySelector('#modal');
 import { fetchBookDetails } from './fetchAPI';
@@ -45,7 +47,7 @@ function renderModalWindow(book) {
     <div class="modal">
     <button type="button" class="modal-close-btn" id="modal-btn-close">
           <svg class="modal-btn-icon" width="16" height="16">
-            <use href="/img/noptimizesprite.svg#icon-x-close"></use>
+            <use href="${icon}#icon-x-close"></use>
           </svg>
         </button>
         <div class="book-wrap">
