@@ -23,14 +23,32 @@
 
 .dark-theme .header-nav-home:hover,
 .header-nav-home:focus {
+
+    color: #111;
+    font-weight: 700;
+    background: #eac645;
+
   color: #111;
   font-weight: 700;
+
 }
 
 .dark-theme .header-nav-shop:hover,
 .header-nav-shop:focus {
+
+    color: #111;
+    font-weight: 700;
+    background: #eac645;
+}
+
+.dark-theme .active {
+    color: #111;
+        font-weight: 700;
+        background: #eac645;
+
   color: #111;
   font-weight: 700;
+
 }
 
 .dark-theme .header-nav-shop:hover use {
