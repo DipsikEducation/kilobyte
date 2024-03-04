@@ -1,35 +1,41 @@
 .dark-theme {
-    background-color: #202024;
-    color: #fff;
-    stroke: #fff;
-    fill: #fff
+  background-color: #202024;
+  color: #fff;
+  stroke: #fff;
+  fill: #fff;
 }
 
 .dark-theme .header,
 .dark-theme .header-container {
-    background: #111;
-    border-color: #fff;
-    stroke: #fff;
+  background: #111;
+  border-color: #fff;
+  stroke: #fff;
 }
 
 .dark-theme .header-icon-two {
-    fill: #f3f3f3;
+  fill: #f3f3f3;
 }
 
 .dark-theme .header-nav-home,
 .dark-theme .header-nav-shop {
-    color: #fff;
+  color: #fff;
 }
 
 .dark-theme .header-nav-home:hover,
 .header-nav-home:focus {
+
     color: #111;
     font-weight: 700;
     background: #eac645;
+
+  color: #111;
+  font-weight: 700;
+
 }
 
 .dark-theme .header-nav-shop:hover,
 .header-nav-shop:focus {
+
     color: #111;
     font-weight: 700;
     background: #eac645;
@@ -39,80 +45,83 @@
     color: #111;
         font-weight: 700;
         background: #eac645;
+
+  color: #111;
+  font-weight: 700;
+
 }
 
 .dark-theme .header-nav-shop:hover use {
-    fill: #000;
-    stroke: #111;
+  fill: #000;
+  stroke: #111;
 }
 
 .dark-theme .header-nav-icon {
-    fill: white;
+  fill: white;
 }
 
 .dark-theme .categories__item {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
-
 
 .dark-theme ::-webkit-scrollbar-thumb {
-    background: #11111199;
-    border-radius: 12px;
+  background: #11111199;
+  border-radius: 12px;
 }
-
 
 .dark-theme .categories__item.selected {
-    color: #eac645;
+  color: #eac645;
 }
 
-
-
-   
+.dark-theme .categories__item:hover,
+.categories__item:focus {
+  color: #eac645;
+}
 
 .dark-theme #icon-align-left {
-    stroke: #fff;
+  stroke: #fff;
 }
 
 .dark-theme .main-category-title {
-    color: #fff;
+  color: #fff;
 }
 
 .dark-theme .book-title {
-    color: #fff;
+  color: #fff;
 }
 
 .dark-theme .book-alt-text {
-    color: #fff;
+  color: #fff;
 }
 
 .dark-theme .see-more {
-    color: #fff;
+  color: #fff;
 }
 
 .dark-theme .book-list {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .dark-theme .all-cat-btn {
-    color: #fff;
+  color: #fff;
 }
 
 .dark-theme .modal {
-    background-color: #202024;
-    border-color: #fff;
-    color: #fff;
+  background-color: #202024;
+  border-color: #fff;
+  color: #fff;
 }
 
 .dark-theme .modal-btn-icon {
-    stroke: #fff;
+  stroke: #fff;
 }
 
 .dark-theme .amazon-logo {
-    color: #fff;
-    filter: brightness(0) invert(1);
+  color: #fff;
+  filter: brightness(0) invert(1);
 }
 
 .dark-theme .book-btn {
-    color: #fff;
-    border-color: #fff;
+  color: #fff;
+  border-color: #fff;
 }

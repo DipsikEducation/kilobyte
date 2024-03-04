@@ -12,7 +12,13 @@ import './js/support';
 import { loadHomeBooks } from './js/homeRender';
 loadHomeBooks();
 
-// import { toggleModal } from './js/modalburger.js';
+import { toggleModal } from './js/modalburger.js';  
+
+refs.burgerBtn.addEventListener('click', () => {
+refs.burgerCont.classList.toggle('is-open-burger');
+refs.body.classList.toggle('modal-open-berger');
+toggleModal();
+});
 
 if (localStorage.getItem('theme') === 'dark') {
   refs.themeCheckbox.checked = true;
@@ -46,6 +52,7 @@ refs.upButton.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
 
 
 

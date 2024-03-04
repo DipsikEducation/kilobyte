@@ -16,10 +16,10 @@ COLOR : #111111 Black , Title and Headers
 @import url(./categories.css);
 @import url(./home.css);
 @import url(./support.css);
-@import url(./modalWindow.css);
 @import url(./shoppingList.css);
 @import url(./theme.switch.css);
-/* @import url(./modalburger.css); */
+@import url(./modalburger.css);
+@import url(./modalWindow.css);
 @import url(./scrollUp.css);
 @import url(./loader.css);
 
@@ -84,11 +84,13 @@ section {
 
 .main-wrapper{
   display: flex;
+  flex-direction: column;
 }
 
 .wrapper-categories{
   display: flex;
   flex-direction: column;
+  align-items: stretch;
 }
 
 @media (min-width: 768px) {
@@ -99,6 +101,12 @@ section {
 
   section {
     padding-bottom: 100px;
+  }
+
+  .wrapper-categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -111,10 +119,20 @@ section {
   section {
     padding-bottom: 40px;
   }
+
+  .main-wrapper{
+    
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
+  }
+   
+  .wrapper-categories{
+    display: block;
   }
 }
