@@ -19,7 +19,7 @@
 
 
 .title-shopping {
-  margin: 40px 0 40px 20px;
+  margin: 0px 0 40px 20px;
 }
 .book-list {
   font-family: var(--font-family);
@@ -162,6 +162,18 @@
   .shopping-list-item {
     max-width: 996px;
   }
+
+  .wrapper-shop-list{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    width: 1392px; 
+  }
+
+  .warapper-shoplist-decor{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;  }
 }
 
 @media (min-width: 1440px) {

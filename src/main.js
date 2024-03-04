@@ -16,7 +16,7 @@ import { toggleModal } from './js/modalburger.js';
 
 refs.burgerBtn.addEventListener('click', () => {
 refs.burgerCont.classList.toggle('is-open-burger');
-refs.body.classList.toggle('modal-open-berger');
+refs.body.classList.toggle('modal-open-burger');
 toggleModal();
 });
 
