@@ -14,6 +14,12 @@ loadHomeBooks();
 
 import { toggleModal } from './js/modalburger.js';
 
+refs.burgerBtn.addEventListener('click', () => {
+refs.burgerCont.classList.toggle('is-open');
+refs.body.classList.toggle('modal-open');
+toggleModal();
+});
+
 if (localStorage.getItem('theme') === 'dark') {
   refs.themeCheckbox.checked = true;
   // Сюди треба навішати класи для темної теми або функцію яка це робитиме
