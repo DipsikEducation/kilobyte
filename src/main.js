@@ -1,4 +1,3 @@
-import './js/support';
 /*LIBRARIES
 1. Axios
 (docs) - https://www.npmjs.com/package/axios?activeTab=readme
@@ -11,6 +10,9 @@ import './js/support';
 */
 import { loadHomeBooks } from './js/homeRender';
 loadHomeBooks();
+
+import './js/support';
+import './js/theme.js'
 
 import { toggleModal } from './js/modalburger.js';  
 

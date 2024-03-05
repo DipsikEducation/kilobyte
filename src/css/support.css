@@ -118,8 +118,16 @@ transform: rotateZ(180deg);
   height: 8px;
 }
 
-@media (min-width: 768px) {
-  .section-support {
+
+@media (min-width: 768px){
+
+  .support-container{
+
+    height: 472px;
+
+  }
+
+  .section-support{
     padding: 0;
   }
 
@@ -130,6 +138,7 @@ transform: rotateZ(180deg);
   .support-title {
     font-size: 24px;
   }
+
 
   .support-btn {
     width: 38px;

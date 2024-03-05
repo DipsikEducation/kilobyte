@@ -6,6 +6,6 @@ if (currentPageUrl.indexOf("index.html") !== -1 || currentPageUrl.endsWith("/"))
 
 const currentPageUr2 = window.location.href;
 
-if (currentPageUrl.indexOf("modalburger.html") !== -1) {
-    document.querySelector(".shopinglist-container").classList.add("active");
+if (currentPageUr2.indexOf("shopinglist.html") !== -1 || currentPageUr2.endsWith("/"))  {
+    document.querySelector(".header-nav-shop").classList.add("active");
 }
