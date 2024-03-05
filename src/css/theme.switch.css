@@ -51,6 +51,7 @@
 
 }
 
+
 .dark-theme .header-nav-shop:hover use {
   fill: #000;
   stroke: #111;
@@ -60,10 +61,15 @@
   fill: white;
 }
 
+/* .dark-theme .header-nav-icon .is-active {
+  color: #111;
+  fill: #000;
+  stroke: #111;
+} */
+
 .dark-theme .is-active {
   color: #000;
 }
-
 
 .dark-theme .categories__item {
   color: rgba(255, 255, 255, 0.6);
