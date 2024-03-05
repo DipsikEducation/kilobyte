@@ -46,8 +46,8 @@
         font-weight: 700;
         background: #eac645;
 
-  color: #111;
-  font-weight: 700;
+/*   color: #111;
+  font-weight: 700; */
 
 }
 
@@ -70,6 +70,13 @@
 .dark-theme .is-active {
   color: #000;
 }
+
+
+.dark-theme .is-active .header-nav-icon {
+  fill: #111;
+  stroke: #111;
+}
+
 
 .dark-theme .categories__item {
   color: rgba(255, 255, 255, 0.6);
@@ -135,4 +142,18 @@
 .dark-theme .book-btn {
   color: #fff;
   border-color: #fff;
+}
+
+
+
+.dark-theme .amazon-logo:hover {
+  color: #fff;
+  filter: brightness(0) invert(1) drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
+  transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-theme .apple-logo:hover {
+  color: #fff;
+  filter: grayscale(100%) drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
+  transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
