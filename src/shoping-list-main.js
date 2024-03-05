@@ -2,6 +2,8 @@ import './js/shoppingListRender'
 import './js/support'
 import './js/theme.js'
 
+import './img/noptimizesprite.svg';
+
 import { refs } from './js/refs';
 import { onAddThemeLocalStorage } from './js/localStorage';
 import { toggleModal } from './js/modalburger.js';
