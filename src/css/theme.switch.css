@@ -46,10 +46,11 @@
         font-weight: 700;
         background: #eac645;
 
-  color: #111;
-  font-weight: 700;
+/*   color: #111;
+  font-weight: 700; */
 
 }
+
 
 .dark-theme .header-nav-shop:hover use {
   fill: #000;
@@ -60,9 +61,16 @@
   fill: white;
 }
 
+/* .dark-theme .header-nav-icon .is-active {
+  color: #111;
+  fill: #000;
+  stroke: #111;
+} */
+
 .dark-theme .is-active {
   color: #000;
 }
+
 
 .dark-theme .is-active .header-nav-icon {
   fill: #111;
