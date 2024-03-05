@@ -60,6 +60,9 @@
   fill: white;
 }
 
+.dark-theme .is-active {
+  color: #000;
+}
 
 
 .dark-theme .categories__item {

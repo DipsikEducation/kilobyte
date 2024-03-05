@@ -75,3 +75,14 @@ function addDisplayPropertyToSupportClass() {
         supportElement.style.display = 'none';
     }
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const currentPath = window.location.pathname;
+  const shopLink = document.querySelector('.header-nav-shop');
+
+  if (currentPath.includes('shopinglist.html')) {
+    shopLink.classList.add('is-active');
+  }
+});

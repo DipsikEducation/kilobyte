@@ -25,6 +25,15 @@
     
 }
 
+.is-active {
+    font-weight: 700;
+    color: #111;
+    border-radius: 36px;
+    padding: 8px 16px;
+    height: 34px;
+    background: #eac645;
+}
+
 .header-logo {
     width: 109px;
     height: 28px;
