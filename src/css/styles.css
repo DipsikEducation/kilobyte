@@ -22,6 +22,7 @@ COLOR : #111111 Black , Title and Headers
 @import url(./modalWindow.css);
 @import url(./scrollUp.css);
 @import url(./loader.css);
+@import url(./pagination.css);
 
 :root {
   font-family: DM Sans;

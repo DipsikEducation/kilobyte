@@ -1,5 +1,6 @@
 import './js/shoppingListRender'
 import './js/support'
+import "./js/pagination"
 import './js/theme.js'
 
 import './img/noptimizesprite.svg';
