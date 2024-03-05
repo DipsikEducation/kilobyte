@@ -39,23 +39,3 @@ export function categoriesSelected(event) {
     LoadHomeCategory(selectedCategory.dataset.category);
   }
 }
-
-// function addSelectedClass() {
-//   const buttons = document.querySelectorAll('.button.see-more');
-//   buttons.forEach(button => {
-//     button.addEventListener('click', () => {
-//       const category = button.dataset.js;
-//       const categoryElement = document.querySelector(
-//         `.categories__item[data-category="${category}"]`
-//       );
-//       if (categoryElement) {
-//         const alreadySelected = categoryElement.classList.contains('selected');
-//         if (!alreadySelected) {
-//           categoryElement.classList.add('selected');
-//         }
-//       }
-//     });
-//   });
-// }
-
-// addSelectedClass();

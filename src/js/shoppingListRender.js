@@ -60,3 +60,29 @@ function markupShoppingList(book) {
     </div>
   </li>`;
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const themeSwitch = document.getElementById('theme-switch');
+  const headerSwitchLabel = document.querySelector('.header-switch-label');
+
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-theme');
+    themeSwitch.checked = true;
+  }
+
+  if (themeSwitch.checked) {
+    headerSwitchLabel.classList.add('active');
+  }
+
+  themeSwitch.addEventListener('change', function () {
+    if (this.checked) {
+      document.body.classList.add('dark-theme');
+      localStorage.setItem('theme', 'dark');
+      headerSwitchLabel.classList.add('active');
+    } else {
+      document.body.classList.remove('dark-theme');
+      localStorage.setItem('theme', 'light');
+      headerSwitchLabel.classList.remove('active');
+    }
+  });
+});
