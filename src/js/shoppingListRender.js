@@ -2,7 +2,8 @@ import { removeFromLocalStorage } from './localStorage.js';
 import { getAllBooks } from './localStorage.js';
 import amazonLogo from '../img/amazon.png';
 import appleLogo from '../img/book.png';
-import {} from '../js/refs.js';
+import { } from '../js/refs.js';
+import icon from '/img/noptimizesprite.svg'
 const shoppingListRef = document.querySelector('#shopping-list');
 const emptyShopListRef = document.querySelector('.box-bookslist');
 
@@ -36,7 +37,7 @@ function markupShoppingList(book) {
   return `<li class="shopping-list-item">
     <button type="button" class="icon-deleteBtn" data-id="${book._id}">
       <svg class="icon-trash" id="icon-trash-03" width="28" height="28">
-        <use href="/img/noptimizesprite.svg#icon-trash-03"></use>
+        <use href="${icon}#icon-trash-03"></use>
       </svg>
     </button>
       <img src="${book.book_image}" alt="${book.title}" class="shopping-item-img">

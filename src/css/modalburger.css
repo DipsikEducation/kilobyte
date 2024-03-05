@@ -64,7 +64,8 @@ button {
 
 .backdrop-burger {
   position: fixed;
-  width: 375px;
+  width: 100%;
+  height: 100%;
   top: 64px;
   z-index: 999;
   padding: 0;
