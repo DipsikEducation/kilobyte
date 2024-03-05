@@ -13,7 +13,7 @@
 
 .support-container {
   max-width: 335px;
-  max-height: 474px;
+  max-height: 460px;
   padding-top: 24px;
   padding-bottom: 24px;
   
@@ -116,6 +116,13 @@ color: #fff;
 }
 
 @media (min-width: 768px){
+
+  .support-container{
+
+    height: 472px;
+
+  }
+
   .section-support{
     padding: 0;
   }
@@ -127,10 +134,10 @@ color: #fff;
 
 @media (min-width: 1440px) {
 
-  .support{
+  /* .support{
     width: 356px;
     
-  }
+  } */
 
   .support-container{
     width: 356px;
