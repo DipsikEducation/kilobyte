@@ -1,0 +1,53 @@
+.tui-page-btn {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50px !important;
+  font-family: sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 1.22 !important;
+  color: #fff;
+  padding: 10px !important;
+}
+
+.tui-is-selected {
+  background-color: #111 !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* .tui-page-btn {
+  padding: 10px !important;
+  align-items: center !important;
+} */
+
+.tui-first {
+  margin-right: 8px !important;
+}
+
+.tui-prev {
+  margin-right: 14px !important;
+}
+
+.tui-next {
+  margin-left: 14px !important;
+}
+
+.tui-last {
+  margin-left: 8px !important;
+}
+.tui-first, .tui-prev, .tui-next, .tui-last{
+background-color: goldenrod;
+}
+
+.tui-first-child {
+  margin-right: 8px !important;
+}
+
+.tui-last-child {
+  margin-left: 8px !important;
+}
+
+.tui-is-disabled{
+    background-color: #111;
+}

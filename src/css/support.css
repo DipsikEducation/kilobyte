@@ -8,15 +8,13 @@
     rgb(79, 46, 232) 18.02733987569809%,
     rgb(255, 255, 255) 100%
   );
- 
 }
 
 .support-container {
   max-width: 335px;
-  max-height: 474px;
+  max-height: 460px;
   padding-top: 24px;
   padding-bottom: 24px;
-  
 }
 
 .support-div-title {
@@ -46,7 +44,6 @@
 .swiper {
   height: 300px;
   margin-bottom: 20px;
-  
 }
 
 .swiper-slide {
@@ -54,19 +51,19 @@
   font-size: 18px;
   display: flex !important;
   height: 32px !important;
-  justify-content: start
+  justify-content: start;
 }
 
-.supports-span{
-display: flex;
-justify-content: start;
-font-family: sans-serif;
-font-weight: 400;
-font-size: 14px;
- line-height: 18px; 
-line-height: 1.28;
-letter-spacing: -0.04em;
-color: #fff;
+.supports-span {
+  display: flex;
+  justify-content: start;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #fff;
 }
 
 .support-list {
@@ -108,6 +105,12 @@ color: #fff;
   margin: 0 auto;
   padding: 0;
   display: flex;
+  transition: all 1s;
+  
+}
+.flip-button{
+transform: rotateZ(180deg);
+
 }
 
 .support-btn-svg {
@@ -115,26 +118,27 @@ color: #fff;
   height: 8px;
 }
 
-@media (min-width: 768px){
-  .section-support{
+@media (min-width: 768px) {
+  .section-support {
     padding: 0;
   }
 
-  .support{
+  .support {
     margin-top: 0;
+  }
+
+  .support-title {
+    font-size: 24px;
+  }
+
+  .support-btn {
+    width: 38px;
+    height: 38px;
   }
 }
 
 @media (min-width: 1440px) {
-
-  .support{
-    width: 356px;
-    
-  }
-
-  .support-container{
+  .support-container {
     width: 356px;
   }
-
 }
-

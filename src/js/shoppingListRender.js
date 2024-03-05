@@ -14,10 +14,10 @@ function checkLocalStorage() {
   } else emptyShopListRef.classList.remove('emptyShoppingList');
 }
 
-window.addEventListener('load', renderShoppingList);
+// window.addEventListener('load', renderShoppingList);
 
-function renderShoppingList() {
-  const allBooksMarkup = getAllBooks()
+export function renderShoppingList(books) {
+  const allBooksMarkup = (books || getAllBooks())
     .map(bookElem => markupShoppingList(bookElem))
     .join('');
   shoppingListRef.innerHTML = allBooksMarkup;
