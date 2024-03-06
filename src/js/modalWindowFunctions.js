@@ -83,17 +83,34 @@ function renderModalWindow(book) {
   </div> `;
 }
 
+// function closeModalWindow(event) {
+//   const backdropRef = document.querySelector('#modal-open');
+//   if (
+//     event.target.id !== 'modal-open' &&
+//     event.target.id !== 'modal-btn-close' &&
+//     event.key !== 'Escape'
+//   )
+//     return;
+//   backdropRef.classList.remove('is-open');
+//   document.querySelector('body').classList.remove('no-scroll');
+
+//   backdropRef.removeEventListener('click', closeModalWindow);
+//   modalBtnCloseRef.removeEventListener('click', closeModalWindow);
+//   document.removeEventListener('keydown', closeModalWindow);
+// }
+
 function closeModalWindow(event) {
   const backdropRef = document.querySelector('#modal-open');
-  if (
+  const modalBtnCloseRef = document.querySelector('#modal-btn-close');
+  if (event.target !== modalBtnCloseRef &&
+    !modalBtnCloseRef.contains(event.target) &&
     event.target.id !== 'modal-open' &&
-    event.target.id !== 'modal-btn-close' &&
-    event.key !== 'Escape'
-  )
+    event.key !== 'Escape') {
     return;
+  }
   backdropRef.classList.remove('is-open');
   document.querySelector('body').classList.remove('no-scroll');
-
+  
   backdropRef.removeEventListener('click', closeModalWindow);
   modalBtnCloseRef.removeEventListener('click', closeModalWindow);
   document.removeEventListener('keydown', closeModalWindow);
