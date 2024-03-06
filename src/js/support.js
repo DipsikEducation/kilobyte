@@ -47,22 +47,20 @@ const supportList = [
     img: new URL('../img/pritula.png', import.meta.url),
   },
 ];
-const btnRevers = document.querySelector(".support-btn");
+const btnRevers = document.querySelector('.support-btn');
 const supportListElem = document.querySelector('.js-support-list');
 const nextButton = document.querySelector('.swiper-button-next');
 
 nextButton.addEventListener('click', () => {
   swiper.slideNext();
-  nextButton.classList.toggle("flip-button")
+  nextButton.classList.toggle('flip-button');
 });
-// btnRevers.addEventListener("click", () => {
-//   rotate
-// })
+
 function supportTemplate(obj, i) {
   return `<div class="swiper-slide supports-item">
-  <span class="supports-span">0${i+1}</span>    
-  <a href="${obj.url}" target="_blank">
-  <img src="${obj.img}" class="support-img"/>
+  <span class="supports-span">0${i + 1}</span>    
+  <a href="${obj.url}" aria-label="link to fund ${obj.title} "target="_blank">
+  <img alt="Link to fund ${obj.title}" src="${obj.img}" class="support-img" />
   </a>
   </div>`;
 }
