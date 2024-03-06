@@ -90,7 +90,14 @@
   margin-bottom: 14px;
   width: 193px;
   height: 68px;
+
   
+  
+  /* height: 68px; */
+  /* line-break: auto;
+    text-overflow: ellipsis; 
+    white-space: wrap;
+    overflow: hidden;  */
 }
 .img-wrap {
   display: flex;
