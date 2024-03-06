@@ -59,8 +59,8 @@ nextButton.addEventListener('click', () => {
 function supportTemplate(obj, i) {
   return `<div class="swiper-slide supports-item">
   <span class="supports-span">0${i + 1}</span>    
-  <a href="${obj.url}" title="${obj.title} "target="_blank">
-  <img aria-label="Link to support fond" src="${obj.img}" class="support-img" />
+  <a href="${obj.url}" aria-label="link to fund ${obj.title} "target="_blank">
+  <img alt="Link to fund ${obj.title}" src="${obj.img}" class="support-img" />
   </a>
   </div>`;
 }
