@@ -8,13 +8,11 @@ export function toggleModal() {
   if (refs.modal.style.display === 'block') {
     refs.modal.style.display = 'none';
     refs.modalImage.setAttribute(
-      'href',`${sprite}#icon-align-left`
-    );
+      'href',`${sprite}#icon-align-left`);
   } else {
     refs.modal.style.display = 'block';
     refs.modalImage.setAttribute(
-      'href', `${sprite}#icon-x-close`     
-    );
+      'href', `${sprite}#icon-x-close`);
   }
 }
 
