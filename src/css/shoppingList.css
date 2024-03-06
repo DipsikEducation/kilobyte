@@ -31,6 +31,8 @@
   margin: auto;
 }
 .box-bookslist {
+
+ /* width: 100vh; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -124,6 +126,9 @@
   display: none;
 }
 @media (min-width: 768px) {
+  .box-bookslist{
+    width: 100vh;
+  }
   .shopping-list-item {
     max-width: 704px;
     height: 213px;
