@@ -29,7 +29,7 @@ if (localStorage.getItem('theme') === 'dark') {
 }
 /*-------------------CATEGORIES----------------------*/ 
 import { categoriesSelected } from './js/categories';
-categoriesSelected();
+// categoriesSelected();
 
 import { refs } from './js/refs.js';
 import { onAddThemeLocalStorage } from './js/localStorage.js';
