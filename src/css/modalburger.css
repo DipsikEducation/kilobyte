@@ -90,6 +90,11 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: radial-gradient(
+    183.6% 183.01% at 59.76% -23.42%,
+    #4f2ee8 18.03%,
+    #ffffff 100%
+  );
 }
 
 .modal-navigation {
@@ -116,6 +121,9 @@ button {
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #111;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .burger-shop-list {
@@ -127,6 +135,35 @@ button {
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #fff;
+}
+
+.burger-shop-list:hover,
+.burger-shop-list:focus {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #111;
+  border-radius: 36px;
+  padding: 8px 16px;
+  width: 156px;
+  height: 34px;
+  background: #eac645;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.burger-home-btn:active,
+.burger-shop-list:active {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.burger-shop-list:hover use,
+.burger-shop-list:focus use {
+  fill: #111;
+  stroke: #111;
 }
 
 .back-img-burgermenu {
