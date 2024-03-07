@@ -41,7 +41,7 @@ function renderCategoryBooks(category, listName) {
   const markupCategoryBooks = category
     .map(book => {
       return `
-        <li class="home-books-item" id="${book._id}">
+        <li class="home-books-item" id="${book._id}" tabindex="0">
         <div class="image-overlay">
             <img class="book-image" src="${book.book_image}" alt="${book.title}">
             <p class="image-overlay-text">QUICK VIEW</p>
