@@ -81,6 +81,7 @@
   overflow: hidden;
   object-fit: cover;
   height: 535px;
+  cursor: pointer;
 }
 .image-overlay {
   position: relative;
