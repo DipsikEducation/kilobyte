@@ -10,7 +10,6 @@ COLOR : #111111 Black , Title and Headers
 
 */
 
-
 @import url(./reset.css);
 @import url(./header.css);
 @import url(./categories.css);
@@ -46,7 +45,7 @@ COLOR : #111111 Black , Title and Headers
   box-sizing: border-box;
 }
 
-body{
+body {
   max-width: 100%;
 }
 
@@ -80,15 +79,15 @@ body{
 }
 
 section {
-  padding-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
-.main-wrapper{
+.main-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.wrapper-categories{
+.wrapper-categories {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -101,10 +100,10 @@ section {
   }
 
   section {
-    padding-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 
-  .wrapper-categories{
+  .wrapper-categories {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -132,17 +131,16 @@ section {
   .container {
     max-width: 1440px;
   }
-   
-  .wrapper-categories{
+
+  .wrapper-categories {
     display: block;
   }
-  
+
   section {
-    padding-bottom: 40px;
+    margin-bottom: 0;
   }
 
-  .main-wrapper{
-    
+  .main-wrapper {
     display: flex;
     flex-direction: row;
   }
