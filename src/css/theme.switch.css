@@ -154,6 +154,40 @@
   border-color: #fff;
 }
 
+<<<<<<< Updated upstream
+=======
+.dark-theme .tui-page-btn:hover {
+  color: #111 !important;
+}
+
+.dark-theme .tui-page-btn .tui-is-selected:hover {
+  background-color: #fff !important;
+  color: #111 !important;
+}
+
+.dark-theme .tui-page-btn {
+  color: #fff !important;
+  border: 1px solid #ffffff !important;
+}
+
+.dark-theme .tui-page-btn + .tui-is-selected {
+  color: #111 !important;
+  background-color: #fff !important;
+}
+
+.dark-theme .tui-pagination .tui-first {
+  border: 1px solid #111 !important;
+}
+
+.dark-theme .tui-pagination .tui-prev {
+  border: 1px solid #111 !important;
+}
+
+.dark-theme .tui-pagination .tui-ico-ellip {
+  background-color: #fff !important;
+}
+
+>>>>>>> Stashed changes
 .dark-theme .amazon-logo:hover {
   color: #fff;
   filter: brightness(0) invert(1)
