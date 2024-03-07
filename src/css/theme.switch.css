@@ -53,7 +53,6 @@
   fill: white;
 }
 
-
 .dark-theme .is-active {
   color: #000;
   filter: drop-shadow(0px 4px 4px rgba(244, 245, 238, 0.15));
@@ -136,6 +135,19 @@
   stroke: #fff;
 }
 
+.dark-theme .burger-menu-button {
+  border: none;
+  stroke: #fff;
+  background-color: #111;
+  padding: 0;
+  margin: 0;
+}
+
+.dark-theme .burger-menu-button:hover use {
+  stroke: #4f2ee8;
+  transition: fill 0.3s;
+}
+
 .dark-theme .amazon-logo {
   color: #fff;
   filter: brightness(0) invert(1);
@@ -145,7 +157,6 @@
   color: #fff;
   border-color: #fff;
 }
-
 
 .dark-theme .tui-page-btn:hover {
   color: #111 !important;
@@ -178,15 +189,13 @@
   background-color: #fff !important;
 }
 
-
-.dark-theme .tui-is-selected:hover{
-background-color: #fff !important;
+.dark-theme .tui-is-selected:hover {
+  background-color: #fff !important;
 }
 
-.dark-theme .tui-page-btn{
+.dark-theme .tui-page-btn {
   border: 1px solid #fff !important;
 }
-
 
 .dark-theme .amazon-logo:hover {
   color: #fff;
@@ -200,4 +209,3 @@ background-color: #fff !important;
   filter: grayscale(100%) drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
   transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
