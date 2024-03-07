@@ -127,3 +127,11 @@
   color: #fff;
   border-color: #fff;
 }
+
+.dark-theme .tui-is-selected:hover{
+background-color: #fff !important;
+}
+
+.dark-theme .tui-page-btn{
+  border: 1px solid #fff !important;
+}

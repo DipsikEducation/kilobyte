@@ -2,8 +2,10 @@ import { removeFromLocalStorage } from './localStorage.js';
 import { getAllBooks } from './localStorage.js';
 import amazonLogo from '../img/amazon.png';
 import appleLogo from '../img/book.png';
-import { } from '../js/refs.js';
-import icon from '/img/noptimizesprite.svg'
+import {} from '../js/refs.js';
+import icon from '/img/noptimizesprite.svg';
+import { updatePagination, PAGINATION, onPageChange } from './pagination.js';
+
 const shoppingListRef = document.querySelector('#shopping-list');
 const emptyShopListRef = document.querySelector('.box-bookslist');
 
@@ -15,7 +17,6 @@ function checkLocalStorage() {
   } else emptyShopListRef.classList.remove('emptyShoppingList');
 }
 
-// window.addEventListener('load', renderShoppingList);
 
 export function renderShoppingList(books) {
   const allBooksMarkup = (books || getAllBooks())
@@ -30,7 +31,7 @@ function deleteFromShoppingList(event) {
   if (!event.target.hasAttribute('id') === 'icon-deleteBtn') return;
   removeFromLocalStorage(event);
   checkLocalStorage();
-  renderShoppingList();
+  updatePagination();
 }
 
 function markupShoppingList(book) {
@@ -61,17 +62,26 @@ function markupShoppingList(book) {
     </div>
   </li>`;
 }
-window.addEventListener('resize', function() {
-    addDisplayPropertyToSupportClass();
+window.addEventListener('resize', function () {
+  addDisplayPropertyToSupportClass();
 });
 
 function addDisplayPropertyToSupportClass() {
-    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    const supportElement = document.querySelector('.support');
+  const screenWidth =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+  const supportElement = document.querySelector('.support');
 
-    if (screenWidth > 1440 && supportElement) {
-        supportElement.style.display = 'block';
-    } else {
-        supportElement.style.display = 'none';
-    }
+  if (screenWidth > 1440 && supportElement) {
+    supportElement.style.display = 'block';
+  } else {
+    supportElement.style.display = 'none';
+  }
 }
+
+PAGINATION.pagination.on('afterMove', event => {
+  onPageChange(event, renderShoppingList);
+});
+PAGINATION.pagination.movePageTo(1);
+
