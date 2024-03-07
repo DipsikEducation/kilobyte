@@ -1,11 +1,6 @@
-.section-support{
-  padding-left: 24px;
-}
-
 .support {
   margin-top: 40px;
   border-radius: 16px;
-  width: 356px;
   box-shadow: 0 10px 10px 0 rgba(245, 245, 247, 0.1);
   background: radial-gradient(
     189.32% 190.93% at 59.76% -23.42%,
@@ -15,7 +10,8 @@
 }
 
 .support-container {
-  max-height: 474px;
+  max-width: 335px;
+  max-height: 460px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -47,7 +43,11 @@
 .swiper {
   height: 300px;
   margin-bottom: 20px;
-  
+  z-index: 0 !important;
+}
+
+.swiper-wrapper{
+  z-index: 0;
 }
 
 .swiper-slide {
@@ -55,19 +55,19 @@
   font-size: 18px;
   display: flex !important;
   height: 32px !important;
-  justify-content: start
+  justify-content: start;
 }
 
-.supports-span{
-display: flex;
-justify-content: start;
-font-family: sans-serif;
-font-weight: 400;
-font-size: 14px;
- line-height: 18px; 
-line-height: 1.28;
-letter-spacing: -0.04em;
-color: #fff;
+.supports-span {
+  display: flex;
+  justify-content: start;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #fff;
 }
 
 .support-list {
@@ -109,9 +109,51 @@ color: #fff;
   margin: 0 auto;
   padding: 0;
   display: flex;
+  transition: all 1s;
+}
+.flip-button {
+  transform: rotateZ(180deg);
 }
 
 .support-btn-svg {
   width: 14px;
   height: 8px;
+}
+
+@media (min-width: 768px) {
+  .support {
+    width: 335px;
+  }
+
+  .support-container {
+    max-height: 474px;
+  }
+
+  .section-support {
+    padding: 0;
+  }
+
+  .support {
+    margin-top: 0;
+    width: 335px;
+  }
+
+  .support-title {
+    font-size: 24px;
+  }
+
+  .support-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .support-container {
+    width: 356px;
+  }
+
+  .support {
+    /* margin-top: 86px; */
+  }
 }

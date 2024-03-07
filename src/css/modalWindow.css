@@ -11,22 +11,26 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
+  overflow-x: hidden;
 }
 .modal {
   position: absolute;
   width: 335px;
-  max-height: 780px;
+  /* ================= */
+  /* height: 762px;
+  max-height: 800px; */
+  /* ================= */
   background-color: #fff;
   border-radius: 18px;
   border: 2px solid #111;
   top: 75%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -75%);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 24px;
-  z-index: 2;
+  z-index: 999;
 }
 
 .is-open {
@@ -35,31 +39,41 @@
   pointer-events: auto;
 }
 .modal-close-btn {
-  background-color: #111;
   border: none;
   position: absolute;
   top: 12px;
   right: 12px;
   height: 16px;
   padding: 0;
+  background-color: transparent;
 }
+.modal-btn-icon {
+  stroke: #111;
+}
+
+.modal-btn-icon:hover {
+  stroke: #4f2ee8;
+}
+
 .book-img {
   border-radius: 8px;
   overflow: hidden;
   border: none;
+  width: 287px;
+  height: 408px;
 }
-
-.book-title {
+/* ======================= */
+.book-title,
+.book-title-modal {
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.125;
   letter-spacing: -0.04em;
-  color: #111;
-  margin-top: 14px;
-  margin-bottom: 4px;
+  margin: 14px 0 4px 0;
+  color: #111111;
 }
-
+/* ===================== */
 .book-author {
   font-style: italic;
   font-weight: 400;
@@ -68,7 +82,17 @@
   letter-spacing: -0.04em;
   color: #b4afaf;
 }
-
+/* ========================== */
+.book-author-modal {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  color: #b4afaf;
+}
+/* ============================ */
 .book-alt-text {
   font-family: inherit;
   font-weight: 400;
@@ -78,6 +102,11 @@
   color: #111;
   margin-top: 18px;
   margin-bottom: 14px;
+  /* =================== */
+  /* max-width: 287px; */
+  /* width: 193px;
+  height: 68px; */
+  /* ===================== */
 }
 .img-wrap {
   display: flex;
@@ -87,6 +116,7 @@
 
 .amazon-logo {
   filter: grayscale(100%);
+  transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .amazon-logo:hover {
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35)) grayscale(100%);
@@ -94,6 +124,7 @@
 
 .apple-logo {
   filter: grayscale(100%);
+  transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .apple-logo:hover {
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35)) grayscale(100%);
@@ -107,7 +138,7 @@
   border: 2px solid #4f2ee8;
   border-radius: 40px;
   padding: 14px 16px;
-  max-width: 279px;
+  width: 279px;
   height: 46px;
   margin: 0 auto;
   text-transform: uppercase;
@@ -118,7 +149,45 @@
   letter-spacing: -0.01em;
   color: #111;
   margin-top: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.book-btn:hover,
+.book-btn:focus {
+  background-color: #4f2ee8;
+  color: #fff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.book-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+/* ==================== */
+.button-modal-wrap {
+  display: flex;
+  width: 242px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-modal-text {
+  font-family: DM Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #11111180;
+  text-align: center;
+  margin-top: 8px;
+}
+/* ==================== */
+
 .no-scroll {
   overflow: hidden;
 }
@@ -126,10 +195,11 @@
 @media (min-width: 768px) {
   .modal {
     width: 579px;
-    max-height: 501px;
+    max-height: 465px;
   }
   .book-img {
-    max-width: 192px;
+    width: 192px;
+    height: 281px;
     margin-right: 24px;
     flex-shrink: 0;
   }
@@ -141,7 +211,19 @@
     font-size: 24px;
     line-height: 1.16667;
   }
+  /* =========== */
+  .book-title-modal {
+    margin: 0 0 8px 0;
+  }
 
+  .book-alt-text {
+    margin: 20px 0 20px 0;
+  }
+
+  .button-modal-wrap {
+    width: 324px;
+  }
+  /* ============= */
   .book-author {
     font-size: 14px;
     line-height: 1.28571;

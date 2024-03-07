@@ -1,0 +1,178 @@
+.dark-theme {
+  background-color: #202024;
+  color: #fff;
+  stroke: #fff;
+  fill: #fff;
+}
+
+.dark-theme .header,
+.dark-theme .header-container {
+  background: #111;
+  border-color: #fff;
+  stroke: #fff;
+}
+
+.dark-theme .header-icon-two {
+  fill: #f3f3f3;
+}
+
+.dark-theme .header-nav-home,
+.dark-theme .header-nav-shop {
+  color: #fff;
+}
+
+.dark-theme .header-nav-home:hover,
+.header-nav-home:focus {
+  color: #111;
+  font-weight: 700;
+  background: #eac645;
+
+  color: #111;
+  font-weight: 700;
+}
+
+.dark-theme .header-nav-shop:hover,
+.header-nav-shop:focus {
+  color: #111;
+  font-weight: 700;
+  background: #eac645;
+}
+
+.dark-theme .active {
+  color: #111;
+  font-weight: 700;
+  background: #eac645;
+
+  /*   color: #111;
+  font-weight: 700; */
+}
+
+.dark-theme .header-nav-shop:hover use {
+  fill: #000;
+  stroke: #111;
+}
+
+.dark-theme .header-nav-icon {
+  fill: white;
+}
+
+/* .dark-theme .header-nav-icon .is-active {
+  color: #111;
+  fill: #000;
+  stroke: #111;
+} */
+
+.dark-theme .is-active {
+  color: #000;
+  filter: drop-shadow(0px 4px 4px rgba(244, 245, 238, 0.15));
+  box-shadow: 0px 1px 3px rgba(251, 251, 246, 0.12),
+    0px 1px 1px rgba(223, 233, 163, 0.14), 0px 2px 1px rgba(245, 245, 242, 0.2);
+}
+
+.dark-theme .is-active .header-nav-icon {
+  fill: #111;
+  stroke: #111;
+}
+
+.dark-theme .categories__item {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-theme ::-webkit-scrollbar-thumb {
+  background: #11111199;
+  border-radius: 12px;
+}
+
+.dark-theme .categories__item.selected {
+  color: #eac645;
+}
+
+.dark-theme .categories__item:hover,
+.categories__item:focus {
+  color: #eac645;
+}
+
+.dark-theme #icon-align-left {
+  stroke: #fff;
+}
+
+.dark-theme .main-category-title {
+  color: #fff;
+}
+
+.dark-theme .book-title {
+  color: #fff;
+}
+
+.dark-theme .book-title-modal {
+  color: #fff;
+}
+
+.dark-theme .book-alt-text {
+  color: #fff;
+}
+
+.dark-theme .shopping-book-title {
+  color: #fff;
+}
+
+.dark-theme .button-modal-text {
+  color: #ffffff80;
+}
+
+.dark-theme .see-more {
+  color: #fff;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-theme .book-list {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-theme .all-cat-btn {
+  color: #fff;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-theme .modal {
+  background-color: #202024;
+  border-color: #fff;
+  color: #fff;
+}
+
+.dark-theme .modal-btn-icon {
+  stroke: #fff;
+}
+
+.dark-theme .amazon-logo {
+  color: #fff;
+  filter: brightness(0) invert(1);
+}
+
+.dark-theme .book-btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+
+.dark-theme .tui-is-selected:hover{
+background-color: #fff !important;
+}
+
+.dark-theme .tui-page-btn{
+  border: 1px solid #fff !important;
+}
+
+.dark-theme .amazon-logo:hover {
+  color: #fff;
+  filter: brightness(0) invert(1)
+    drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
+  transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-theme .apple-logo:hover {
+  color: #fff;
+  filter: grayscale(100%) drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
+  transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+

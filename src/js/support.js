@@ -47,21 +47,22 @@ const supportList = [
     img: new URL('../img/pritula.png', import.meta.url),
   },
 ];
-
+const btnRevers = document.querySelector('.support-btn');
 const supportListElem = document.querySelector('.js-support-list');
 const nextButton = document.querySelector('.swiper-button-next');
 
 nextButton.addEventListener('click', () => {
   swiper.slideNext();
+  nextButton.classList.toggle('flip-button');
 });
+
 function supportTemplate(obj, i) {
-  return `
-  <div class="swiper-slide supports-item">
-  <span class="supports-span">0${i+1}</span>    
-   <a href="${obj.url}" target="_blank">
-   <img src="${obj.img}" class="support-img"/>
-   </a>
-   </div>`;
+  return `<div class="swiper-slide supports-item">
+  <span class="supports-span">0${i + 1}</span>    
+  <a href="${obj.url}" aria-label="link to fund ${obj.title} "target="_blank">
+  <img alt="Link to fund ${obj.title}" src="${obj.img}" class="support-img" />
+  </a>
+  </div>`;
 }
 function supportMarkup(array) {
   return array.map(supportTemplate).join('');
@@ -73,10 +74,11 @@ function renderSupport() {
 renderSupport();
 
 const swiper = new Swiper('.mySwiper', {
-  direction: 'vertical',
-  spaceBetween: 20,
-  loop: true,
   slidesPerView: 6,
-  plugins: { scrollContainer: true },
+  loopAdditionalSlides: 6,
+  direction: 'vertical',
   rewind: true,
+  allowTouchMove: false,
+  spaceBetween: 20,
+  slidesPerGroup: 6,
 });

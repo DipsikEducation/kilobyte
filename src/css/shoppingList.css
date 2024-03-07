@@ -1,27 +1,207 @@
-.title-shopping{
-margin: 40px 0 120px 20px;
+* {
+  box-sizing: border-box;
 }
-.book-list{
+@import url(./header.css);
+@import url(./support.css);
+
+.remove-support {
+  display: none;
+}
+
+.shopinglist-section {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+
+/* .title-shopping {
+  margin-left: 20px;
+} */
+.book-list {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 14px;
-line-height: 129%;
-letter-spacing: -0.02em;
-text-align: center;
-color: rgba(0, 0, 0, 0.6);
-margin-bottom: 14px;
-max-width: 244px;
-margin: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 14px;
+  max-width: 244px;
+  margin: auto;
 }
-.box-bookslist{
-  max-width: 265px;
+.box-bookslist {
+  /* width: 100vh; */
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  margin-top: 120px;
 }
 
 .bookslist {
   width: 265px;
   height: 198px;
   margin: 0 auto;
+}
+/* --------------------------------------------*/
+.shopping-list-item {
+  border: 2px solid rgba(79, 46, 232, 0.4);
+  border-radius: 16px;
+  padding: 14px;
+  max-width: 335px;
+  max-height: 220px;
+  display: flex;
+  gap: 14px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.shopping-item-img {
+  max-width: 98px;
+  height: 139px;
+  border-radius: 8px;
+  /* =================== */
+  /* margin-bottom: 5px; */
+  /* ==================== */
+}
+.shopping-book-title {
+  margin-top: 0;
+  max-width: 144px;
+  /* =================== */
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
+  margin: 0 0 4px 0;
+  color: #111111;
+  /* =================== */
+}
+
+.shopping-book-category {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  color: #b4afaf;
+  width: 150px;
+}
+
+.author-shops-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-info-wrap {
+  display: flex;
+  flex-direction: column;
+  /* ====================== */
+  justify-content: space-between;
+}
+
+.shopping-amazon-logo {
+  width: 32px;
+  height: 11px;
+}
+.shopping-apple-logo {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-deleteBtn {
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #4f2ee8;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: transparent;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.icon-deleteBtn:hover {
+  background-color: blue;
+  box-shadow: 1px 3px 2px rgba(183, 172, 231, 0.4),
+    3px 2px 1px rgba(147, 134, 205, 0.4);
+  border: 1.5px solid #202024;
+}
+
+.icon-trash {
+  fill: violet;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.shopping-img-wrap {
+  margin-top: 0;
+  gap: 8px;
+}
+.emptyShoppingList {
+  display: none;
+}
+@media (min-width: 768px) {
+  .box-bookslist {
+    width: 100vh;
+  }
+  /* ========================== */
+  .book-info-wrap {
+    width: 530px;
+  }
+  /* ========================== */
+  .shopping-list-item {
+    max-width: 704px;
+    height: 213px;
+    padding: 24px;
+  }
+  .shopping-book-title {
+    max-width: 500px;
+  }
+  .shopping-book-category {
+    max-width: 500px;
+  }
+  .shopping-item-img {
+    max-width: 116px;
+    height: 165px;
+  }
+  .icon-deleteBtn {
+    width: 34px;
+    height: 34px;
+  }
+  .shopping-amazon-logo {
+    width: 48px;
+    height: 15px;
+  }
+  .shopping-apple-logo {
+    width: 28px;
+    height: 28px;
+  }
+  .shopping-img-wrap {
+    gap: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .shopping-list-item {
+    max-width: 996px;
+  }
+
+  .wrapper-shop-list {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    width: 1392px;
+  }
+
+  .warapper-shoplist-decor {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1440px) {
 }

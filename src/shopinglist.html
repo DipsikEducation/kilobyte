@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./img/Logotype.svg" />
+    <title>Kilobyte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/pagination.css">
+  </head>
+  <body>
+    <load src="./partials/header.html" />
+    <section class="shopinglist-section ">
+    <div class="container">
+      <div class="wrapper-shop-list">
+    <load src="./partials/support.html" />
+        <div class="warapper-shoplist-decor">
+    <h2 class="main-category-title title-shopping">
+      Shopping <span class="main-category-title-span">List</span>
+    </h2>
+    <div class="box-bookslist emptyShoppingList">
+      <p class="book-list">
+        This page is empty, add some books and proceed to order.
+      </p>
+      <img
+        class="bookslist"
+        src="./img/bookslist.png"
+        alt="empty cart"
+        width="300"
+        height="300"
+      />
+    </div>
+    <div class="shopping-list-wrap">
+      <ul class="shopping-list" id="shopping-list"></ul>
+    </div>
+    <load src="./partials/pagination.html"/>
+  </div>
+  </div>
+  </div>
+  </section>
+  
+ <load src="./partials/modalburger.html" />
+    <!-- <script type="module" src="./main.js"></script> -->
+    <script type="module" src="./shoping-list-main.js"></script>
+  </body>
+</html>

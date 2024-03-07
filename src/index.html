@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./img/Logotype.svg" />
     <title>Kilobyte</title>
     <link
       rel="stylesheet"
@@ -18,25 +19,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-
     <load src="partials/header.html" />
+    <load src="partials/modalburger.html" />
+    <div class="container">
+    <div class="main-wrapper ">
+      <div class="wrapper-categories">
     <load src="partials/сategories.html" />
     <load src="partials/support.html" />
+    </div>
     <load src="partials/home.html" />
-    <load src="partials/shopinglist.html" />
+  </div>
+    <!-- <load src="partials/shopinglist.html" /> -->
 
     <span class="loader"></span>
 
-    <button type="button" style="display: none" class="up-button">
-      Up
-    </button>;
+    <span id="modal"></span>
+
+    <button type="button" style="display: none;" class="up-button">Up</button>
    
-     
-
-
-    
-
-
     <script type="module" src="./main.js"></script>
+  </div>
   </body>
 </html>
