@@ -121,8 +121,12 @@
 }
 
 @media (min-width: 768px) {
+  .support {
+    width: 335px;
+  }
+
   .support-container {
-    height: 472px;
+    max-height: 474px;
   }
 
   .section-support {

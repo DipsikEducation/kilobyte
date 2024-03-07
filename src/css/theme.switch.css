@@ -154,6 +154,15 @@
   border-color: #fff;
 }
 
+
+.dark-theme .tui-is-selected:hover{
+background-color: #fff !important;
+}
+
+.dark-theme .tui-page-btn{
+  border: 1px solid #fff !important;
+}
+
 .dark-theme .amazon-logo:hover {
   color: #fff;
   filter: brightness(0) invert(1)
@@ -166,3 +175,4 @@
   filter: grayscale(100%) drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
   transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
