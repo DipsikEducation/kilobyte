@@ -45,17 +45,17 @@ function markupShoppingList(book) {
       
     
     <div class="book-info-wrap">
-      <p class="book-title shopping-book-title break-text">${book.title}</p>
+      <p class="shopping-book-title break-text">${book.title}</p>
       <p class="shopping-book-category break-text">${book.list_name}</p>
       <p class="book-alt-text">${book.description}</p>
       <div class="author-shops-wrap">
         <p class="book-author">${book.author}</p>
         <div class="img-wrap shopping-img-wrap">
           <a href="${book.amazon_product_url}" target="blank">
-            <img src="${amazonLogo}" alt="amazon-logo" class="amazon-logo shopping-amazon-logo" width="62" height="19">
+            <img src="${amazonLogo}" alt="amazon-logo" class="amazon-logo shopping-amazon-logo" width="32" height="11">
           </a>
           <a href="${book.buy_links[1].url}" target="_blank">
-            <img src="${appleLogo}" alt="apple-book" class="apple-logo shopping-apple-logo" width="33" height="32">
+            <img src="${appleLogo}" alt="apple-book" class="apple-logo shopping-apple-logo" width="16" height="16">
           </a>
         </div>
       </div>
@@ -80,8 +80,18 @@ function addDisplayPropertyToSupportClass() {
   }
 }
 
+
 PAGINATION.pagination.on('afterMove', event => {
   onPageChange(event, renderShoppingList);
 });
 PAGINATION.pagination.movePageTo(1);
+
+document.addEventListener('DOMContentLoaded', function () {
+  const currentPath = window.location.pathname;
+  const shopLink = document.querySelector('.header-nav-shop');
+
+  if (currentPath.includes('shopinglist.html')) {
+    shopLink.classList.add('is-active');
+  }
+});
 

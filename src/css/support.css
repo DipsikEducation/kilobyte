@@ -43,6 +43,11 @@
 .swiper {
   height: 300px;
   margin-bottom: 20px;
+  z-index: 0 !important;
+}
+
+.swiper-wrapper{
+  z-index: 0;
 }
 
 .swiper-slide {
@@ -130,6 +135,7 @@
 
   .support {
     margin-top: 0;
+    width: 335px;
   }
 
   .support-title {
@@ -145,5 +151,9 @@
 @media (min-width: 1440px) {
   .support-container {
     width: 356px;
+  }
+
+  .support {
+    /* margin-top: 86px; */
   }
 }
