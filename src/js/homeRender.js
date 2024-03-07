@@ -12,7 +12,6 @@ const loader = document.querySelector('.loader');
 window.addEventListener('load', () => {
   loader.style.display = 'none';
 });
-
 //  loader
 
 const toastOptions = {
