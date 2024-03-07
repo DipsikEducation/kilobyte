@@ -1,7 +1,6 @@
 .support {
   margin-top: 40px;
   border-radius: 16px;
-  width: 335px;
   box-shadow: 0 10px 10px 0 rgba(245, 245, 247, 0.1);
   background: radial-gradient(
     189.32% 190.93% at 59.76% -23.42%,
@@ -44,6 +43,11 @@
 .swiper {
   height: 300px;
   margin-bottom: 20px;
+  z-index: 0 !important;
+}
+
+.swiper-wrapper{
+  z-index: 0;
 }
 
 .swiper-slide {
@@ -117,8 +121,12 @@
 }
 
 @media (min-width: 768px) {
+  .support {
+    width: 335px;
+  }
+
   .support-container {
-    height: 472px;
+    max-height: 474px;
   }
 
   .section-support {
@@ -127,6 +135,7 @@
 
   .support {
     margin-top: 0;
+    width: 335px;
   }
 
   .support-title {
@@ -145,6 +154,6 @@
   }
 
   .support {
-    margin-top: 86px;
+    /* margin-top: 86px; */
   }
 }

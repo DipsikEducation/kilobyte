@@ -1,6 +1,6 @@
 .tui-page-btn {
-  width: 44px !important;
-  height: 44px !important;
+  width: 38px !important;
+  height: 38px !important;
   border-radius: 50px !important;
   font-family: sans-serif !important;
   font-weight: 700 !important;
@@ -11,19 +11,11 @@
 }
 
 .tui-is-selected {
-<<<<<<< Updated upstream
   background-color: #111 !important;
   padding-left: 10px;
   padding-right: 10px;
-=======
-  /* background-color: #111 !important; */
->>>>>>> Stashed changes
-}
 
-/* .tui-page-btn {
-  padding: 10px !important;
-  align-items: center !important;
-} */
+}
 
 .tui-first {
   margin-right: 5px !important;
@@ -37,30 +29,27 @@
   margin-left: 14px !important;
 }
 
+.tui-first,
+.tui-prev,
+.tui-next,
 .tui-last {
-<<<<<<< Updated upstream
   margin-left: 8px !important;
 }
+
 .tui-first, .tui-prev, .tui-next, .tui-last{
-background-color: goldenrod;
-=======
   background-color: #eac645 !important;
->>>>>>> Stashed changes
 }
 
 .tui-first-child {
   margin-right: 8px !important;
 }
 
-<<<<<<< Updated upstream
+
 .tui-last-child {
   margin-left: 8px !important;
 }
 
-.tui-is-disabled{
-    background-color: #111;
-}
-=======
+
 .tui-is-disabled {
   background-color: #111 !important;
 }
@@ -75,19 +64,12 @@ background-color: goldenrod;
   margin-bottom: 40px !important;
 }
 
-/* html.dark-mode .tui-pagination .tui-page-btn:hover {
-  background-color: #111;
-} */
 
 .tui-page-btn {
   margin-right: 8px;
   border: 1px solid #111 !important;
 }
 
-/* html.dark-theme .tui-pagination .tui-page-btn {
-  background-color: #fff;
-  border: 1px solid #fff !important;
-} */
 
 .tui-pagination .tui-prev,
 .tui-pagination .tui-last-child {
@@ -99,6 +81,43 @@ background-color: goldenrod;
   border: 1px solid #111 !important;
 }
 
+.tui-is-disabled {
+  background-color: #111;
+}
+
+.hidden {
+  display: none;
+}
+
+.tui-pagination {
+  height: auto;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+html.dark-mode .tui-pagination .tui-page-btn:hover {
+  background-color: #111;
+}
+
+.tui-page-btn {
+  margin-right: 8px;
+  border: 1px solid #111 !important;
+}
+
+html.dark-theme .tui-pagination .tui-page-btn {
+  background-color: #fff;
+  border: 1px solid #fff !important;
+}
+
+.tui-pagination .tui-prev,
+.tui-pagination .tui-last-child {
+  margin-right: 14px !important;
+}
+
+.tui-pagination .tui-next {
+  margin-left: 0 !important;
+}
+
 .tui-pagination .tui-last {
   margin-right: 0 !important;
   border: 1px solid #111 !important;
@@ -106,16 +125,12 @@ background-color: goldenrod;
 
 .tui-pagination .tui-is-selected,
 .tui-pagination strong {
+
   color: #fff !important;
   background: #111 !important;
-  /* border-color: #111 !important; */
+
 }
 
-/* html.dark-theme .tui-pagination .tui-is-selected,
-html.dark-theme .tui-pagination strong {
-  background: #fff !important;
-  border-color: #fff !important;
-} */
 
 .tui-first,
 .tui-prev,
@@ -146,4 +161,4 @@ html.dark-theme .tui-pagination strong {
     height: 44px !important;
   }
 }
->>>>>>> Stashed changes
+

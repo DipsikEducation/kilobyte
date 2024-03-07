@@ -57,6 +57,7 @@
 @media (min-width: 1280px) {
   .categories__list {
     max-width: 356px;
+    margin-bottom: 86px;
     /* margin: 40px 40px 86px 0; */
   }
 }

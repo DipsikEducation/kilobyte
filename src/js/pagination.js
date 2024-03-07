@@ -1,9 +1,11 @@
 import Pagination from 'tui-pagination';
 import 'tui-pagination/dist/tui-pagination.css';
-import { renderShoppingList } from './shoppingListRender';
+
+export const PAGINATION = {
+  pagination: null,
+};
 
 const paginationElem = document.querySelector('#pagination1');
-let pagination;
 
 function initPagination() {
   console.log(window.screen.width);
@@ -12,13 +14,13 @@ function initPagination() {
     options.itemsPerPage = 4;
     options.visiblePages = 2;
   }
-  pagination = new Pagination('pagination1', options);
+  PAGINATION.pagination = new Pagination('pagination1', options);
   const data = JSON.parse(localStorage.getItem('modal'));
   if (data.length < 3) {
     paginationElem.style.display = 'none';
   }
-  pagination.setTotalItems(data.length);
-  pagination.reset();
+  PAGINATION.pagination.setTotalItems(data.length);
+  PAGINATION.pagination.reset();
 }
 
 const options = {
@@ -48,16 +50,29 @@ const options = {
   },
 };
 
-
 initPagination();
 
-pagination.on('afterMove', event => {
+export function onPageChange(event, callback) {
   const currentPage = event.page - 1;
   const data = JSON.parse(localStorage.getItem('modal'));
   const startIndex = currentPage * options.itemsPerPage;
   const endIndex = startIndex + options.itemsPerPage;
   const bookList = data.slice(startIndex, endIndex);
-  renderShoppingList(bookList);
-});
+  callback(bookList);
+}
 
-pagination.movePageTo(1);
+export function updatePagination() {
+  const data = JSON.parse(localStorage.getItem('modal')) || [];
+  const currentPage = PAGINATION.pagination.getCurrentPage();
+  const maxPage = Math.ceil(data.length / options.itemsPerPage);
+  const page = currentPage > maxPage ? maxPage : currentPage;
+  PAGINATION.pagination.setTotalItems(data.length);
+  PAGINATION.pagination.reset();
+  PAGINATION.pagination.movePageTo(page);
+  if (data.length <= 3) {
+    paginationElem.classList.add('hidden');
+  } else {
+    paginationElem.classList.remove('hidden');
+  }
+}
+updatePagination();

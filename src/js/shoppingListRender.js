@@ -4,6 +4,8 @@ import amazonLogo from '../img/amazon.png';
 import appleLogo from '../img/book.png';
 import {} from '../js/refs.js';
 import icon from '/img/noptimizesprite.svg';
+import { updatePagination, PAGINATION, onPageChange } from './pagination.js';
+
 const shoppingListRef = document.querySelector('#shopping-list');
 const emptyShopListRef = document.querySelector('.box-bookslist');
 
@@ -15,7 +17,6 @@ function checkLocalStorage() {
   } else emptyShopListRef.classList.remove('emptyShoppingList');
 }
 
-// window.addEventListener('load', renderShoppingList);
 
 export function renderShoppingList(books) {
   const allBooksMarkup = (books || getAllBooks())
@@ -30,7 +31,7 @@ function deleteFromShoppingList(event) {
   if (!event.target.hasAttribute('id') === 'icon-deleteBtn') return;
   removeFromLocalStorage(event);
   checkLocalStorage();
-  renderShoppingList();
+  updatePagination();
 }
 
 function markupShoppingList(book) {
@@ -79,6 +80,12 @@ function addDisplayPropertyToSupportClass() {
   }
 }
 
+
+PAGINATION.pagination.on('afterMove', event => {
+  onPageChange(event, renderShoppingList);
+});
+PAGINATION.pagination.movePageTo(1);
+
 document.addEventListener('DOMContentLoaded', function () {
   const currentPath = window.location.pathname;
   const shopLink = document.querySelector('.header-nav-shop');
@@ -87,3 +94,4 @@ document.addEventListener('DOMContentLoaded', function () {
     shopLink.classList.add('is-active');
   }
 });
+

@@ -42,9 +42,6 @@
   color: #111;
   font-weight: 700;
   background: #eac645;
-
-  /*   color: #111;
-  font-weight: 700; */
 }
 
 .dark-theme .header-nav-shop:hover use {
@@ -56,11 +53,6 @@
   fill: white;
 }
 
-/* .dark-theme .header-nav-icon .is-active {
-  color: #111;
-  fill: #000;
-  stroke: #111;
-} */
 
 .dark-theme .is-active {
   color: #000;
@@ -154,8 +146,7 @@
   border-color: #fff;
 }
 
-<<<<<<< Updated upstream
-=======
+
 .dark-theme .tui-page-btn:hover {
   color: #111 !important;
 }
@@ -187,7 +178,16 @@
   background-color: #fff !important;
 }
 
->>>>>>> Stashed changes
+
+.dark-theme .tui-is-selected:hover{
+background-color: #fff !important;
+}
+
+.dark-theme .tui-page-btn{
+  border: 1px solid #fff !important;
+}
+
+
 .dark-theme .amazon-logo:hover {
   color: #fff;
   filter: brightness(0) invert(1)
@@ -200,3 +200,4 @@
   filter: grayscale(100%) drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.35));
   transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
