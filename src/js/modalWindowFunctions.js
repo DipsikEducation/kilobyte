@@ -1,4 +1,4 @@
-import icon from '/img/noptimizesprite.svg'
+import icon from '/img/noptimizesprite.svg';
 
 export const bookListRef = document.querySelector('.home-categories-list');
 const modalPlaceRef = document.querySelector('#modal');
@@ -24,13 +24,23 @@ export async function onBookClick(event) {
   const listBtnRef = document.querySelector('.book-btn');
   const backdropRef = document.querySelector('#modal-open');
   modalBtnCloseRef = document.querySelector('#modal-btn-close');
+  const buttonModalWrap = document.querySelector('.button-modal-wrap');
 
   backdropRef.addEventListener('click', closeModalWindow);
   modalBtnCloseRef.addEventListener('click', closeModalWindow);
   document.addEventListener('keydown', closeModalWindow);
-  listBtnRef.addEventListener('click', event =>
-    addToLocalStorage(event, oneBookData)
-  );
+  listBtnRef.addEventListener('click', event => {
+    if (listBtnRef.dataset.state === 'add') {
+      addToLocalStorage(event, oneBookData);
+      listBtnRef.dataset.state = 'remove';
+      listBtnRef.textContent = 'remove from the shopping list';
+      buttonModalWrap.style.display = 'block';
+    } else {
+      listBtnRef.dataset.state = 'add';
+      listBtnRef.textContent = 'add to shopping list';
+      buttonModalWrap.style.display = 'none';
+    }
+  });
 }
 
 function renderModalWindow(book) {
@@ -53,8 +63,8 @@ function renderModalWindow(book) {
         <div class="book-wrap">
                 <img class="book-img" src="${book.book_image}" alt="${book.title}">
                 <div class="book-info-wrap">
-                <p class="book-title">${book.title}</p>
-                <p class="book-author">${book.author}</p>
+                <p class="book-title-modal">${book.title}</p>
+                <p class="book-author-modal">${book.author}</p>
                 <p class="book-alt-text">${book.description}</p>
                 <div class="img-wrap ">
                 <a href="${book.amazon_product_url}" target="blank" >
@@ -78,40 +88,24 @@ function renderModalWindow(book) {
                 </div>
                 </a>
                 </div>
-                  <button type="button" class="book-btn" data-id = "${book._id}">${buttonBasket}</button>       
+                  <button type="button" class="book-btn" data-id="${book._id}" data-state="add">${buttonBasket}</button>
+                  <div class="button-modal-wrap" style="display: none"><p class="button-modal-text">Сongratulations! You have added the book to the shopping list. To delete, press the button “Remove from the shopping list”.</p></div>  
   </div>
   </div> `;
 }
 
-// function closeModalWindow(event) {
-//   const backdropRef = document.querySelector('#modal-open');
-//   if (
-//     event.target.id !== 'modal-open' &&
-//     event.target.id !== 'modal-btn-close' &&
-//     event.key !== 'Escape'
-//   )
-//     return;
-//   backdropRef.classList.remove('is-open');
-//   document.querySelector('body').classList.remove('no-scroll');
-
-//   backdropRef.removeEventListener('click', closeModalWindow);
-//   modalBtnCloseRef.removeEventListener('click', closeModalWindow);
-//   document.removeEventListener('keydown', closeModalWindow);
-// }
-
 function closeModalWindow(event) {
   const backdropRef = document.querySelector('#modal-open');
-  const modalBtnCloseRef = document.querySelector('#modal-btn-close');
-  if (event.target !== modalBtnCloseRef &&
-    !modalBtnCloseRef.contains(event.target) &&
-    event.target.id !== 'modal-open' &&
-    event.key !== 'Escape') {
-    return;
+  if (
+    event.target === backdropRef ||
+    event.target.closest('.modal-close-btn') ||
+    event.key === 'Escape'
+  ) {
+    backdropRef.classList.remove('is-open');
+    document.querySelector('body').classList.remove('no-scroll');
+
+    backdropRef.removeEventListener('click', closeModalWindow);
+    modalBtnCloseRef.removeEventListener('click', closeModalWindow);
+    document.removeEventListener('keydown', closeModalWindow);
   }
-  backdropRef.classList.remove('is-open');
-  document.querySelector('body').classList.remove('no-scroll');
-  
-  backdropRef.removeEventListener('click', closeModalWindow);
-  modalBtnCloseRef.removeEventListener('click', closeModalWindow);
-  document.removeEventListener('keydown', closeModalWindow);
 }

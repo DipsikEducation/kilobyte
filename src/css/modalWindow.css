@@ -16,8 +16,10 @@
 .modal {
   position: absolute;
   width: 335px;
-  height: 762px;
-  max-height: 800px;
+  /* ================= */
+  /* height: 762px;
+  max-height: 800px; */
+  /* ================= */
   background-color: #fff;
   border-radius: 18px;
   border: 2px solid #111;
@@ -60,16 +62,18 @@
   width: 287px;
   height: 408px;
 }
-
-.book-title {
+/* ======================= */
+.book-title,
+.book-title-modal {
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.125;
   letter-spacing: -0.04em;
-  color: #111;
+  margin: 14px 0 4px 0;
+  color: #111111;
 }
-
+/* ===================== */
 .book-author {
   font-style: italic;
   font-weight: 400;
@@ -78,7 +82,17 @@
   letter-spacing: -0.04em;
   color: #b4afaf;
 }
-
+/* ========================== */
+.book-author-modal {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  color: #b4afaf;
+}
+/* ============================ */
 .book-alt-text {
   font-family: inherit;
   font-weight: 400;
@@ -88,17 +102,11 @@
   color: #111;
   margin-top: 18px;
   margin-bottom: 14px;
-  max-width: 287px;
+  /* =================== */
+  /* max-width: 287px; */
   /* width: 193px;
   height: 68px; */
-
-  
-  
-  /* height: 68px; */
-  /* line-break: auto;
-    text-overflow: ellipsis; 
-    white-space: wrap;
-    overflow: hidden;  */
+  /* ===================== */
 }
 .img-wrap {
   display: flex;
@@ -144,21 +152,41 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
   transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .book-btn:hover,
 .book-btn:focus {
   background-color: #4f2ee8;
   color: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .book-btn:active {
   transform: translateY(2px);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
+/* ==================== */
+.button-modal-wrap {
+  display: flex;
+  width: 242px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-modal-text {
+  font-family: DM Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #11111180;
+  text-align: center;
+  margin-top: 8px;
+}
+/* ==================== */
 
 .no-scroll {
   overflow: hidden;
@@ -167,7 +195,7 @@
 @media (min-width: 768px) {
   .modal {
     width: 579px;
-    max-height: 465px;  
+    max-height: 465px;
   }
   .book-img {
     width: 192px;
@@ -183,7 +211,19 @@
     font-size: 24px;
     line-height: 1.16667;
   }
+  /* =========== */
+  .book-title-modal {
+    margin: 0 0 8px 0;
+  }
 
+  .book-alt-text {
+    margin: 20px 0 20px 0;
+  }
+
+  .button-modal-wrap {
+    width: 324px;
+  }
+  /* ============= */
   .book-author {
     font-size: 14px;
     line-height: 1.28571;

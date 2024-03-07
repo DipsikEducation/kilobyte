@@ -31,8 +31,7 @@
   margin: auto;
 }
 .box-bookslist {
-
- /* width: 100vh; */
+  /* width: 100vh; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -66,6 +65,15 @@
 .shopping-book-title {
   margin-top: 0;
   max-width: 144px;
+  /* =================== */
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
+  margin: 0 0 4px 0;
+  color: #111111;
+  /* =================== */
 }
 
 .shopping-book-category {
@@ -85,7 +93,9 @@
 .book-info-wrap {
   display: flex;
   flex-direction: column;
-  width: 530px;
+  /* ====================== */
+  width: 335px;
+  justify-content: space-between;
 }
 
 .shopping-amazon-logo {
@@ -110,14 +120,15 @@
   align-items: center;
 
   border: transparent;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .icon-deleteBtn:hover {
   background-color: blue;
-  box-shadow: 1px 3px 2px rgba(183, 172, 231, 0.4), 3px 2px 1px rgba(147, 134, 205, 0.4);
+  box-shadow: 1px 3px 2px rgba(183, 172, 231, 0.4),
+    3px 2px 1px rgba(147, 134, 205, 0.4);
   border: 1.5px solid #202024;
-
 }
 
 .icon-trash {
@@ -135,9 +146,14 @@
   display: none;
 }
 @media (min-width: 768px) {
-  .box-bookslist{
+  .box-bookslist {
     width: 100vh;
   }
+  /* ========================== */
+  .book-info-wrap {
+    width: 530px;
+  }
+  /* ========================== */
   .shopping-list-item {
     max-width: 704px;
     height: 213px;
