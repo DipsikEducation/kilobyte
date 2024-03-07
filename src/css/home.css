@@ -5,7 +5,7 @@
   line-height: 1.1875;
   letter-spacing: -0.04em;
   color: #111;
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 .main-category-title-span {
   color: #4f2ee8;
@@ -167,7 +167,6 @@
     width: 218px;
   }
   .main-category-title {
-    margin-top: 100px;
   }
   .book-image {
     height: 316px;
