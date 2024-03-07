@@ -106,11 +106,9 @@
   padding: 0;
   display: flex;
   transition: all 1s;
-  
 }
-.flip-button{
-transform: rotateZ(180deg);
-
+.flip-button {
+  transform: rotateZ(180deg);
 }
 
 .support-btn-svg {
@@ -118,16 +116,12 @@ transform: rotateZ(180deg);
   height: 8px;
 }
 
-
-@media (min-width: 768px){
-
-  .support-container{
-
+@media (min-width: 768px) {
+  .support-container {
     height: 472px;
-
   }
 
-  .section-support{
+  .section-support {
     padding: 0;
   }
 
@@ -139,7 +133,6 @@ transform: rotateZ(180deg);
     font-size: 24px;
   }
 
-
   .support-btn {
     width: 38px;
     height: 38px;
@@ -149,5 +142,9 @@ transform: rotateZ(180deg);
 @media (min-width: 1440px) {
   .support-container {
     width: 356px;
+  }
+
+  .support {
+    margin-top: 86px;
   }
 }
