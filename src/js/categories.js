@@ -42,3 +42,25 @@ export function categoriesSelected(event) {
     LoadHomeCategory(selectedCategory.dataset.category);
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const currentLocation = window.location.href;
+  const menuItems = document.querySelectorAll('.header-nav a');
+
+  menuItems.forEach(item => {
+    // Перевіряємо, чи поточне посилання містить href пункту меню
+    if (currentLocation.includes(item.getAttribute('href'))) {
+      item.classList.add('is-active'); // Додаємо клас active
+    }
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  const currentLocation = window.location.href;
+  const menuItems = document.querySelectorAll('.header-nav a');
+
+  menuItems.forEach(item => {
+    if (currentLocation.includes(item.getAttribute('href'))) {
+      item.classList.add('is-active');
+    }
+  });
+});
