@@ -14,7 +14,6 @@
   background-color: #111 !important;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 .tui-first {
@@ -29,14 +28,17 @@
   margin-left: 14px !important;
 }
 
-.tui-first,
+/* .tui-first,
 .tui-prev,
 .tui-next,
 .tui-last {
   margin-left: 8px !important;
-}
+} */
 
-.tui-first, .tui-prev, .tui-next, .tui-last{
+.tui-first,
+.tui-prev,
+.tui-next,
+.tui-last {
   background-color: #eac645 !important;
 }
 
@@ -44,11 +46,9 @@
   margin-right: 8px !important;
 }
 
-
-.tui-last-child {
+/* .tui-last-child {
   margin-left: 8px !important;
-}
-
+} */
 
 .tui-is-disabled {
   background-color: #111 !important;
@@ -64,12 +64,10 @@
   margin-bottom: 40px !important;
 }
 
-
 .tui-page-btn {
   margin-right: 8px;
   border: 1px solid #111 !important;
 }
-
 
 .tui-pagination .tui-prev,
 .tui-pagination .tui-last-child {
@@ -125,12 +123,9 @@ html.dark-theme .tui-pagination .tui-page-btn {
 
 .tui-pagination .tui-is-selected,
 .tui-pagination strong {
-
   color: #fff !important;
   background: #111 !important;
-
 }
-
 
 .tui-first,
 .tui-prev,
@@ -160,5 +155,8 @@ html.dark-theme .tui-pagination .tui-page-btn {
     width: 44px !important;
     height: 44px !important;
   }
-}
 
+  .tui-first {
+    margin-right: 8px !important;
+  }
+}

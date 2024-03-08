@@ -17,7 +17,6 @@ function checkLocalStorage() {
   } else emptyShopListRef.classList.remove('emptyShoppingList');
 }
 
-
 export function renderShoppingList(books) {
   const allBooksMarkup = (books || getAllBooks())
     .map(bookElem => markupShoppingList(bookElem))
@@ -73,13 +72,12 @@ function addDisplayPropertyToSupportClass() {
     document.body.clientWidth;
   const supportElement = document.querySelector('.support');
 
-  if (screenWidth > 1440 && supportElement) {
+  if (screenWidth > 1279 && supportElement) {
     supportElement.style.display = 'block';
   } else {
     supportElement.style.display = 'none';
   }
 }
-
 
 PAGINATION.pagination.on('afterMove', event => {
   onPageChange(event, renderShoppingList);
@@ -94,4 +92,3 @@ document.addEventListener('DOMContentLoaded', function () {
     shopLink.classList.add('is-active');
   }
 });
-

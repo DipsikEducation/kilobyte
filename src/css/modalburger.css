@@ -117,6 +117,12 @@ button {
   margin: 0;
 }
 
+.burger-menu-button:hover,
+.burger-menu-button:focus {
+  stroke: #4f2ee8;
+  transition: fill 0.3s;
+}
+
 .burger-home-btn {
   border-radius: 36px;
   padding: 8px 16px;
@@ -190,4 +196,8 @@ button {
 
 .modal-open-burger {
   overflow: hidden;
+}
+
+.btn-burger-icon:hover {
+  fill: blue; /* Синій колір при наведенні */
 }
