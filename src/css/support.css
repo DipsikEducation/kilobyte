@@ -129,7 +129,7 @@
   .support-container {
     height: 474px;
     margin-bottom: 0;
-    display: none;
+    display: block;
   }
 
   .section-support {
