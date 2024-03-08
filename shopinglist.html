@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/kilobyte/assets/Logotype-0d514fde.svg" />
     <title>Kilobyte</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     
     
     <script type="module" crossorigin src="/kilobyte/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/kilobyte/assets/vendor-bbb17a86.js">
-    <link rel="modulepreload" crossorigin href="/kilobyte/assets/localStorage-03863c33.js">
-    <link rel="stylesheet" href="/kilobyte/assets/localStorage-72de02d6.css">
+    <link rel="modulepreload" crossorigin href="/kilobyte/assets/localStorage-8fa780de.js">
+    <link rel="stylesheet" href="/kilobyte/assets/localStorage-c326ff72.css">
     <link rel="stylesheet" href="/kilobyte/assets/vendor-6007684f.css">
-    <link rel="stylesheet" href="/kilobyte/assets/shopinglist-b56edb42.css">
+    <link rel="stylesheet" href="/kilobyte/assets/shopinglist-0c74c220.css">
   </head>
   <body>
     <header id="header" class="header">
@@ -61,9 +65,9 @@
       </button>
       <div class="header-burger">
         <button
+          class="burger-menu-button"
           aria-label="burger-menu-button"
           type="button"
-          class="burger-menu-button"
         >
           <svg
             class="btn-burger-icon"
@@ -90,10 +94,10 @@
   </div>
 </header>
 
-    <section class="shopinglist-section ">
-    <div class="container">
-      <div class="wrapper-shop-list">
-    <section class="section-support">
+    <section class="shopinglist-section container">
+      <div class="shopping-container">
+        <div class="wrapper-shop-list">
+          <section class="section-support">
 <div class="support">
   <div class="support-container ">
     <div class="support-div-title">
@@ -115,35 +119,35 @@
 </div>
 </section>
 
-        <div class="warapper-shoplist-decor">
-    <h2 class="main-category-title title-shopping">
-      Shopping <span class="main-category-title-span">List</span>
-    </h2>
-    <div class="box-bookslist emptyShoppingList">
-      <p class="book-list">
-        This page is empty, add some books and proceed to order.
-      </p>
-      <img
-        class="bookslist"
-        src="/kilobyte/assets/bookslist-229fd7ef.png"
-        alt="empty cart"
-        width="300"
-        height="300"
-      />
-    </div>
-    <div class="shopping-list-wrap">
-      <ul class="shopping-list" id="shopping-list"></ul>
-    </div>
-    <section class="section-pag">
+          <div class="warapper-shoplist-decor">
+            <h2 class="main-category-title title-shopping">
+              Shopping <span class="main-category-title-span">List</span>
+            </h2>
+            <div class="box-bookslist emptyShoppingList">
+              <p class="book-list">
+                This page is empty, add some books and proceed to order.
+              </p>
+              <img
+                class="bookslist"
+                src="/kilobyte/assets/bookslist-229fd7ef.png"
+                alt="empty cart"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="shopping-list-wrap">
+              <ul class="shopping-list" id="shopping-list"></ul>
+            </div>
+            <section class="section-pag">
   <div id="pagination1" class="tui-pagination pag-wrap"></div>
   
 </section>
-  </div>
-  </div>
-  </div>
-  </section>
-  
- <section class="backdrop-burger">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="backdrop-burger">
   <div class="burg-cont">
     <nav class="modal-navigation">
       <a class="burger-home-btn" href="./index.html">HOME</a>
