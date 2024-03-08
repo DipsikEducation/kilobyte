@@ -154,6 +154,11 @@
 .emptyShoppingList {
   display: none;
 }
+
+ .main-category-title {
+   margin-bottom: 40px;
+ }
+
 @media (min-width: 768px) {
   .wrapper-shop-list {
     max-width: 1279px;
@@ -162,7 +167,7 @@
     /* margin-left: 32px; */
   }
   .box-bookslist {
-    /* width: 100vh; */
+    width: 100vh;
   }
   /* ========================== */
   .book-info-wrap {
@@ -218,8 +223,11 @@
 
   .warapper-shoplist-decor {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
+    margin-left: 40px;
   }
+
+
 }
 
 @media (min-width: 1440px) {

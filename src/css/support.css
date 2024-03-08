@@ -127,7 +127,7 @@
   }
 
   .support-container {
-    max-height: 474px;
+    height: 474px;
     margin-bottom: 0;
     display: none;
   }
@@ -139,6 +139,7 @@
   .support {
     margin-top: 0;
     width: 335px;
+    height: 474px;
   }
 
   .support-title {

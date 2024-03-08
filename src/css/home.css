@@ -209,7 +209,7 @@
 
   .main-category-title {
     margin-top: 0;
-    margin-left: 40px;
+    /* margin-left: 40px; */
   }
   .book-image {
     height: 256px;
