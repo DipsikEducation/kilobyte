@@ -1,5 +1,5 @@
 .support {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   border-radius: 16px;
   box-shadow: 0 10px 10px 0 rgba(245, 245, 247, 0.1);
   background: radial-gradient(
@@ -14,6 +14,7 @@
   max-height: 460px;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .support-div-title {
@@ -46,7 +47,7 @@
   z-index: 0 !important;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   z-index: 0;
 }
 
@@ -126,7 +127,9 @@
   }
 
   .support-container {
-    max-height: 474px;
+    height: 474px;
+    margin-bottom: 0;
+    display: block;
   }
 
   .section-support {
@@ -136,6 +139,7 @@
   .support {
     margin-top: 0;
     width: 335px;
+    height: 474px;
   }
 
   .support-title {
@@ -148,9 +152,11 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1279px) {
   .support-container {
     width: 356px;
+    max-width: 1440px;
+    display: block;
   }
 
   .support {
