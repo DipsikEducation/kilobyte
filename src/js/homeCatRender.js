@@ -6,7 +6,7 @@ const sectionTitle = document.querySelector('.main-category-title');
 
 export function LoadHomeCategory(data) {
   const categoryTitle = data;
-  console.log(data);
+  // console.log(data);
   fetchSelectedCategory(categoryTitle)
     .then(category => {
       if (Object.keys(category.data).length !== 0) {

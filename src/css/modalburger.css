@@ -229,3 +229,7 @@ button {
 .modal-open-burger {
   overflow: hidden;
 }
+
+.modal-open {
+  overflow: hidden;
+}
