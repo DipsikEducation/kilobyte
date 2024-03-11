@@ -99,7 +99,7 @@ function closeModalWindow(event) {
   if (
     event.target === backdropRef ||
     event.target.closest('.modal-close-btn') ||
-    event.key === 'Escape'
+    (event.key === 'Escape' && backdropRef.classList.contains('is-open'))
   ) {
     backdropRef.classList.remove('is-open');
     document.querySelector('body').classList.remove('no-scroll');

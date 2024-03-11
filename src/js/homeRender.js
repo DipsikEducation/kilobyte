@@ -100,11 +100,30 @@ function renderHomeCategories(categories) {
   });
   seeMoreListener();
 }
+// function renderHomeBooks(books) {
+//   return books
+//     .map(book => {
+//       return `
+//         <li class="home-books-item" id="${book._id}" tabindex="0">
+//             <div class="image-overlay">
+//                 <img class="book-image" src="${book.book_image}" alt="${book.title}">
+//                 <p class="image-overlay-text">QUICK VIEW</p>
+//             </div>
+//             <div class="book-info">
+//                 <p class="book-title break-text">${book.title}</p>
+//                 <p class="book-author">${book.author}</p>
+//             </div>
+//         </li>`;
+//     })
+//     .join('');
+// }
+
 function renderHomeBooks(books) {
   return books
     .map(book => {
       return `
-        <li class="home-books-item" id="${book._id}" tabindex="0">
+        <li class="home-books-item" id="${book._id}">
+          <a href="javascript:void(0)" class="book-link">
             <div class="image-overlay">
                 <img class="book-image" src="${book.book_image}" alt="${book.title}">
                 <p class="image-overlay-text">QUICK VIEW</p>
@@ -113,10 +132,12 @@ function renderHomeBooks(books) {
                 <p class="book-title break-text">${book.title}</p>
                 <p class="book-author">${book.author}</p>
             </div>
+          </a>
         </li>`;
     })
     .join('');
 }
+
 function seeMoreListener() {
   for (let btns of seeMoreBtn) {
     btns.addEventListener('click', () =>

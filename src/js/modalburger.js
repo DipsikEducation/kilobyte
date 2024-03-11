@@ -1,18 +1,16 @@
 // './img/noptimizesprite.svg#icon-align-left' 10 stroke
 // './img/noptimizesprite.svg#icon-x-close' 17 строка
 import { refs } from './refs';
-import sprite from '/img/noptimizesprite.svg'
-console.log('~ sprite', `${sprite}#icon-align-left`)
+import sprite from '/img/noptimizesprite.svg';
+// console.log('~ sprite', `${sprite}#icon-align-left`)
 
 export function toggleModal() {
   if (refs.modal.style.display === 'block') {
     refs.modal.style.display = 'none';
-    refs.modalImage.setAttribute(
-      'href',`${sprite}#icon-align-left`);
+    refs.modalImage.setAttribute('href', `${sprite}#icon-align-left`);
   } else {
     refs.modal.style.display = 'block';
-    refs.modalImage.setAttribute(
-      'href', `${sprite}#icon-x-close`);
+    refs.modalImage.setAttribute('href', `${sprite}#icon-x-close`);
   }
 }
 

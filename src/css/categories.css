@@ -75,3 +75,7 @@
 .categories__item:focus {
   color: #4f2ee8;
 }
+
+.tab-link:focus {
+  color: #4f2ee8;
+}

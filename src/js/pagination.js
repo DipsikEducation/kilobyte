@@ -8,7 +8,7 @@ export const PAGINATION = {
 const paginationElem = document.querySelector('#pagination1');
 
 function initPagination() {
-  console.log(window.screen.width);
+  // console.log(window.screen.width);
 
   if (window.screen.width < 768) {
     options.itemsPerPage = 4;

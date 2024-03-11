@@ -125,46 +125,78 @@ button {
 
 .burger-home-btn {
   border-radius: 36px;
-  padding: 8px 16px;
+  padding: 6px 14px;
   width: 72px;
-  background-color: #eac645;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28571;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: #111;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.burger-shop-list {
-  display: flex;
-  gap: 4px;
+  height: 34px;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #fff;
+  border-radius: 36px;
+  border: solid 1px #eac645;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  filter: drop-shadow(0px 4px 4px rgba(244, 245, 238, 0.15));
+  box-shadow: 0px 1px 3px rgba(251, 251, 246, 0.12),
+    0px 1px 1px rgba(223, 233, 163, 0.14), 0px 2px 1px rgba(245, 245, 242, 0.2);
+}
+
+.burger-shop-list {
+  border-radius: 36px;
+  padding: 7px 15px 7px 15px;
+  width: 156px;
+  height: 34px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 36px;
+  border: solid 1px #eac645;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  filter: drop-shadow(0px 4px 4px rgba(244, 245, 238, 0.15));
+  box-shadow: 0px 1px 3px rgba(251, 251, 246, 0.12),
+    0px 1px 1px rgba(223, 233, 163, 0.14), 0px 2px 1px rgba(245, 245, 242, 0.2);
 }
 
 .burger-shop-list:hover,
 .burger-shop-list:focus {
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #111;
   border-radius: 36px;
-  padding: 8px 16px;
+  padding: 7px 15px 7px 15px;
   width: 156px;
   height: 34px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background: #eac645;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.burger-home-btn:hover,
+.burger-home-btn:focus {
+  /* border-radius: 36px;
+  padding: 8px 16px;
+  width: 72px;
+  height: 34px; */
+  font-weight: 700;
+  color: #111;
+  background: #eac645;
 }
 
 .burger-home-btn:active,
@@ -198,6 +230,6 @@ button {
   overflow: hidden;
 }
 
-.btn-burger-icon:hover {
-  fill: blue; /* Синій колір при наведенні */
+.modal-open {
+  overflow: hidden;
 }

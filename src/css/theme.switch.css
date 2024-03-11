@@ -33,9 +33,23 @@
 
 .dark-theme .header-nav-shop:hover,
 .header-nav-shop:focus {
-  color: #111;
+  border-radius: 36px;
+  padding: 7px 15px 7px 15px;
+  width: 156px;
+  height: 34px;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background: #eac645;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .dark-theme .active {
@@ -44,9 +58,13 @@
   background: #eac645;
 }
 
-.dark-theme .header-nav-shop:hover use {
+.dark-theme .header-nav-shop:hover use,
+.header-nav-shop:focus use {
   fill: #000;
   stroke: #111;
+  color: #111;
+  font-weight: 700;
+  background: #eac645;
 }
 
 .dark-theme .header-nav-icon {
@@ -80,6 +98,10 @@
 
 .dark-theme .categories__item:hover,
 .categories__item:focus {
+  color: #eac645;
+}
+
+.dark-theme .tab-link:focus {
   color: #eac645;
 }
 
@@ -144,6 +166,11 @@
 }
 
 .dark-theme .burger-menu-button:hover use {
+  stroke: #4f2ee8;
+  transition: fill 0.3s;
+}
+
+.dark-theme .burger-menu-button:focus use {
   stroke: #4f2ee8;
   transition: fill 0.3s;
 }
